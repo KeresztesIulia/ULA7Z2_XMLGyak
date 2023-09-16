@@ -24,9 +24,65 @@ td
     text-align: center;
 }
 
-.mainimg
+a
+{
+    text-decoration: none;
+    color:darkorange;
+}
+
+a:hover
+{
+    color:crimson;
+}
+
+a:visited
+{
+    color:darkgoldenrod;
+}
+
+a:visited:hover
+{
+    color:darkred;
+}
+
+footer
+{
+    text-align: center;
+}
+
+ul
+{
+    color:rgb(227, 160, 59);
+}
+
+h3
+{
+    text-decoration: underline;
+}
+
+#mainimg
 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+
+.tematika
+{
+    width: 40%;
+    float: left;
+}
+
+.floatimg
+{
+    float: right;
+    width: 25%;
+    margin-left:auto;
+    margin-right:auto;
+    
+}
+
+footer
+{
+    clear:both;
 }
