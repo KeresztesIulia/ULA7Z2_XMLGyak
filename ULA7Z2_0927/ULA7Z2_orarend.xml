@@ -1,0 +1,127 @@
+<ULA7Z2_orarend>
+    <óra id="A1" típus="elmélet">
+        <kurzusnév>Angol 1.</kurzusnév>
+        <időpont>
+            <kezdet>12</kezdet>
+            <vég>14</vég>
+            <nap>Hétfő</nap>
+        </időpont>
+        <oktató>Vitányiné Varga Erika Ilona</oktató>
+        <helyszín>A5/202</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+
+    <óra id="MI1" típus="elmélet">
+        <kurzusnév>Mesterséges intelligencia alapok</kurzusnév>
+        <időpont>
+            <kezdet>10</kezdet>
+            <vég>12</vég>
+            <nap>Kedd</nap>
+        </időpont>
+        <oktató>Fazekas Levente</oktató>
+        <helyszín>XXXII. előadó</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="XML1" típus="elmélet">
+        <kurzusnév>Adatkezelés XML-ben</kurzusnév>
+        <időpont>
+            <kezdet>12</kezdet>
+            <vég>14</vég>
+            <nap>Kedd</nap>
+        </időpont>
+        <oktató>Bednarik László</oktató>
+        <helyszín>XXXII. előadó</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="AA1" típus="elmélet">
+        <kurzusnév>Algoritmusok és vizsgálatuk</kurzusnév>
+        <időpont>
+            <kezdet>14</kezdet>
+            <vég>16</vég>
+            <nap>Kedd</nap>
+        </időpont>
+        <oktató>Házy Attila</oktató>
+        <helyszín>A1/320</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="AA2" típus="gyakorlat">
+        <kurzusnév>Algoritmusok és vizsgálatuk</kurzusnév>
+        <időpont>
+            <kezdet>16</kezdet>
+            <vég>18</vég>
+            <nap>Kedd</nap>
+        </időpont>
+        <oktató>Házy Attila</oktató>
+        <helyszín>A1/320</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+
+    <óra id="XML2" típus="gyakorlat">
+        <kurzusnév>Adatkezelés XML-ben</kurzusnév>
+        <időpont>
+            <kezdet>12</kezdet>
+            <vég>14</vég>
+            <nap>Szerda</nap>
+        </időpont>
+        <oktató>Bednarik László</oktató>
+        <helyszín>Inf. 103</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="V1" típus="elmélet">
+        <kurzusnév>Vállalati információs rendszerek fejlesztése</kurzusnév>
+        <időpont>
+            <kezdet>14</kezdet>
+            <vég>16</vég>
+            <nap>Szerda</nap>
+        </időpont>
+        <oktató>Sasvári Péter</oktató>
+        <helyszín>Inf. 101</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="V2" típus="gyakorlat">
+        <kurzusnév>Vállalati információs rendszerek fejlesztése</kurzusnév>
+        <időpont>
+            <kezdet>18</kezdet>
+            <vég>20</vég>
+            <nap>Szerda</nap>
+        </időpont>
+        <oktató>Sasvári Péter</oktató>
+        <helyszín>Inf. 101</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+
+    <óra id="MI2" típus="gyakorlat">
+        <kurzusnév>Mesterséges intelligencia alapok</kurzusnév>
+        <időpont>
+            <kezdet>10</kezdet>
+            <vég>12</vég>
+            <nap>Csütörtök</nap>
+        </időpont>
+        <oktató>Fazekas Levente</oktató>
+        <helyszín>III. előadó</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="R1" típus="gyakorlat">
+        <kurzusnév>Versenyrobotok programozása</kurzusnév>
+        <időpont>
+            <kezdet>14</kezdet>
+            <vég>16</vég>
+            <nap>Csütörtök</nap>
+        </időpont>
+        <oktató>Lengyelné Szilágyi Szilvia</oktató>
+        <oktató>Körei Attila</oktató>
+        <helyszín>A4 Tréningstúdió</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+    <óra id="J1" típus="gyakorlat">
+        <kurzusnév>Játékprototípusok</kurzusnév>
+        <időpont>
+            <kezdet>16</kezdet>
+            <vég>20</vég>
+            <nap>Csütörtök</nap>
+        </időpont>
+        <oktató>Kis Áron</oktató>
+        <helyszín>Inf. 15</helyszín>
+        <szak>programtervező informatikus</szak>
+    </óra>
+</ULA7Z2_orarend>
