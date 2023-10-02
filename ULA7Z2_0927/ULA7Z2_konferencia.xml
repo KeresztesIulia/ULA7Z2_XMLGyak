@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<konferencia>
+    <cím>Valami Konferencia</cím>
+    <helyszín>XY terem, Valami Ismert Hely</helyszín>
+    <előadó>
+        <név>Emberi Név</név>
+        <adószám>246019430</adószám>
+        <lakcím>Létező Hely Neve, Létező utca 9.</lakcím>
+    </előadó>
+    <dátum>2033. 10. 02.</dátum>
+    <hallgatók>
+        <hallgató>
+            <név>Valaki</név>
+            <lakcím>Valahol</lakcím>
+        </hallgató>
+        <hallgató>
+            <név>Senki</név>
+            <lakcím>Sehol</lakcím>
+        </hallgató>
+        <hallgató>
+            <név>Nincs jelezve, hogy több lenne belőlük</név>
+            <lakcím>De gondolom több, mint egy hallgatója van egy konferenciának</lakcím>
+        </hallgató>
+    </hallgatók>
+</konferencia>

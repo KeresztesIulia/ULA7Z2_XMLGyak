@@ -1,0 +1,26 @@
+body
+{
+    background-color: lightcyan;
+    color: darkcyan;
+}
+
+td
+{
+    padding: 7px;
+    background-color:azure;
+    border-radius: 10%;
+}
+
+th
+{
+    padding: 5px;
+    border-radius: 50%;
+    background-color:rgb(192, 248, 248);
+}
+
+table
+{
+    width: 70%;
+    margin: auto;
+    background-color: rgb(33, 120, 120);
+}
