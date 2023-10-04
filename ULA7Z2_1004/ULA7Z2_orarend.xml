@@ -1,5 +1,7 @@
-<ULA7Z2_orarend xmlns:xs="https://www.w3.org/2001/XMLSchema"
-    xs:noNamespaceSchemaLocation="ULA7Z2_orarend.xsd">
+<!DOCTYPE ULA7Z2_orarend SYSTEM "ULA7Z2_orarend.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+
+<ULA7Z2_orarend>
     <óra id="A1" típus="elmélet">
         <kurzusnév>Angol 1.</kurzusnév>
         <időpont>

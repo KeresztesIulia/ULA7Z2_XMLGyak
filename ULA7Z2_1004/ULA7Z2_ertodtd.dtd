@@ -1,0 +1,26 @@
+<!ELEMENT ULA7Z2_modell (A+, B+, C+, AB*)>
+
+<!ELEMENT A (b+, c?)>
+    <!ELEMENT b (x?, y?)>
+        <!ELEMENT x (#PCDATA)>
+        <!ELEMENT y (#PCDATA)>
+    <!ELEMENT c (d?, e?)>
+        <!ELEMENT d (#PCDATA)>
+        <!ELEMENT e (#PCDATA)>
+    <!ATTLIST A a ID #REQUIRED>
+
+<!ELEMENT B (b?)>
+    <!ELEMENT b (x?, y?)>
+        <!ELEMENT x (#PCDATA)>
+        <!ELEMENT y (#PCDATA)>
+    <!ATTLIST B a ID #REQUIRED>
+    <!ATTLIST B Cref IDREF>
+
+<!ELEMENT C (b?)>
+    <!ELEMENT b (#PCDATA)>
+    <!ATTLIST C a ID #REQUIRED>
+
+<!ELEMENT AB (c?)>
+    <!ELEMENT c (#PCDATA)>
+    <!ATTLIST AB Aref IDREF #REQUIRED>
+    <!ATTLIST AB Bref IDREF #REQUIRED>

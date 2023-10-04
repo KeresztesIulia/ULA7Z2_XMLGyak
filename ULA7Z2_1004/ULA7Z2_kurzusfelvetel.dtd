@@ -1,0 +1,13 @@
+
+<!ELEMENT kurzusfelvetel (kurzusadatok*)>
+
+<!ELEMENT kurzusadatok (kurzus*, időpont+, (oktato|oraado)?)>
+    <!ELEMENT kurzus (#PCDATA)>
+    <!ELEMENT időpont (kezdés?, vég?, nap?)>
+        <!ELEMENT kezdés (#PCDATA)>
+        <!ELEMENT vég (#PCDATA)>
+        <!ELEMENT nap (Hétfő | Kedd | Szerda | Csütörtök | Péntek) "Hétfő">
+    <!ELEMENT oktato (#PCDATA)>
+    <!ELEMENT oraado (#PCDATA)>
+    
+    <!ATTLIST jovahagyas (igen | nem) "nem">

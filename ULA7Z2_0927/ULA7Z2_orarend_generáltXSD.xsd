@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Created with Liquid Technologies Online Tools 1.0 (https://www.liquid-technologies.com) -->
+<schema xmlns:xs="https://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns="http://www.w3.org/2001/XMLSchema">
+	<import schemaLocation="schema1.xsd" namespace="https://www.w3.org/2001/XMLSchema" />
+	<element name="ULA7Z2_orarend">
+		<complexType>
+			<sequence>
+				<element maxOccurs="unbounded" name="óra">
+					<complexType>
+						<sequence>
+							<element name="kurzusnév" type="string" />
+							<element name="időpont">
+								<complexType>
+									<sequence>
+										<element name="kezdet" type="unsignedByte" />
+										<element name="vég" type="unsignedByte" />
+										<element name="nap" type="string" />
+									</sequence>
+								</complexType>
+							</element>
+							<element maxOccurs="unbounded" name="oktató" type="string" />
+							<element name="helyszín" type="string" />
+							<element name="szak" type="string" />
+						</sequence>
+						<attribute name="id" type="string" use="required" />
+						<attribute name="típus" type="string" use="required" />
+					</complexType>
+				</element>
+			</sequence>
+			<attribute ref="xs:noNamespaceSchemaLocation" use="required" />
+		</complexType>
+	</element>
+</schema>

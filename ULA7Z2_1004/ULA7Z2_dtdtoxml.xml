@@ -1,0 +1,60 @@
+<!DOCTYPE ULA7Z2_modell SYSTEM "ULA7Z2_ertodtd.dtd">
+<?xml version="1.0" encoding="utf-8"?>
+
+<ULA7Z2_modell>
+    <A a="A1">
+        <b>
+            <x>A1X</x>
+            <y>A1Y</y>
+        </b>
+        <c>
+            <d>A1D</d>
+            <e>A1E</e>
+        </c>
+    </A>
+
+    <B a="B1" Cref="C1">
+        <b>
+            <x>B1X</x>
+            <y>B1Y</y>
+        </b>
+    </B>
+
+    <C a="C1">
+        <b>C1B</b>
+    </C>
+
+    <AB Aref="A1" Bref="B1">
+        <c>A1-B1</c>
+    </AB>   
+
+
+    <A a="A2">
+        <b>
+            <x>A2X</x>
+            <y>A2Y</y>
+        </b>
+        <c>
+            <d>A2D</d>
+            <e>A2E</e>
+        </c>
+    </A>
+
+    <B a="B2" Cref="C1">
+        <b>
+            <x>B2X</x>
+            <y>B2Y</y>
+        </b>
+    </B>
+
+    <AB Aref="A2" Bref="B1">
+        <c>A2-B1</c>
+    </AB>  
+    <AB Aref="A1" Bref="B2">
+        <c>A1-B2</c>
+    </AB>
+    <AB Aref="A2" Bref="B2">
+        <c>A2-B2</c>
+    </AB>     
+
+</ULA7Z2_modell>

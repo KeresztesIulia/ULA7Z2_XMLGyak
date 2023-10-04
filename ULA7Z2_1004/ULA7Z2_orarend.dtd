@@ -1,0 +1,15 @@
+
+
+<!ELEMENT ULA7Z2_orarend (óra+)>
+    <!ELEMENT óra (kurzusnév?, időpont?, oktató+, helyszín?, szak?)>
+    <!ELEMENT kurzusnév (#PCDATA)>
+    <!ELEMENT időpont (kezdet?, vég?, nap?)>
+        <!ELEMENT kezdet (#PCDATA)>
+        <!ELEMENT vég (#PCDATA)>
+        <!ELEMENT nap (Hétfő | Kedd | Szerda | Csütörtök) "Hétfő">
+    <!ELEMENT oktató (#PCDATA)>
+    <!ELEMENT helyszín (#PCDATA)>
+    <!ELEMENT szak (#PCDATA)>
+
+<!ATTLIST óra id ID #REQUIRED>
+<!ATTLIST óra típus (elmélet | gyakorlat) "elmélet">

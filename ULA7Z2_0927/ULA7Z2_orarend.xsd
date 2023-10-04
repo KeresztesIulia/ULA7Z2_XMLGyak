@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="ULA7Z2_orarend">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="óra" type="oraTipus" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:complexType name="oraTipus">
+    <xs:sequence>
+        <xs:element name="kurzusnév" type="xs:string"/>
+        <xs:element name="időpont" type="idopontTipus"/>
+        <xs:element name="oktató" type="xs:string"/>
+        <xs:element name="helyszín" type="xs:string"/>
+        <xs:element name="szak" type="xs:string"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:int" use="required"/>
+    <xs:attribute name="típus" type="oraTipusTipus" default="elmélet"/>
+</xs:complexType>
+
+<xs:simpleType name="oraTipusTipus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="elmélet"/>
+        <xs:enumeration value="gyakorlat"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="idopontTipus">
+    <xs:sequence>
+        <xs:element name="kezdet" type="idopontOraTipus"/>
+        <xs:element name="vég" type="idopontOraTipus"/>
+        <xs:element name="nap" type="napTipus"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="napTipus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="Hétfő"/>
+        <xs:enumeration value="Kedd"/>
+        <xs:enumeration value="Szerda"/>
+        <xs:enumeration value="Csütörtök"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="idopontOraTipus">
+    <xs:restriction base="xs:positiveInteger">
+        <xs:minInclusive value="8"/>
+        <xs:maxInclusive value="20"/>
+    </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>
