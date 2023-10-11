@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- egyszerű típusok -->
+<attribute name="egyetemNeve" type="xs:string" />
+
+<element name="hnev" type="xs:string" />
+<element name="szulnev" type="xs:string" />
+<element name="szak" type="xs:string" />
+<attribute name="evf" type="xs:string" />
+
+<element name="kurzusnev" type="xs:string" />
+<element name="kredit" type="xs:string" />
+<element name="hely" type="xs:string" />
+<element name="idopont" type="xs:string" />
+<element name="oktató" type="xs:string" />
+<element name="óraadó" type="xs:string" />
+<attribute name="id" type="xs:string" />
+
+
+<!-- saját típusok -->
+<simpleType name="tanevTípus">
+    <restriction base="string">
+        <pattern value="20\d{2}/\d{2} [I, II]"/>
+    </restriction>
+</simpleType>
+
+<simpleType name="jóváhagyás">
+    <restriction base="string">
+        <enumeration value="igen" />
+        <enumeration value="nem" />
+    </restriction>
+</simpleType>
+
+<complexType name="hallgato">
+    <sequence>
+        <element ref="hnev" />
+        <element ref="szulev" />
+        <element ref="szak" />
+    </sequence>
+    <attribute ref="evf" />
+</complexType>
+
+    
+
+
+</xs:schema>
