@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- egyszerű típusok -->
+
+<element name="fellépő_név" type="xs:string"/>
+<element name="ország" type="xs:string"/>
+<element name="díj" type="xs:string"/>
+
+<element name="fesztivál_név" type="xs:string"/>
+<element name="helyszín" type="xs:string"/>
+<element name="év" type="xs:integer"/>
+
+<element name="bár_név" type="xs:string"/>
+<element name="ital" type="xs:string"/>
+<element name="cég" type="xs:string"/>
+
+<element name="alkalmazott_név" type="xs:string"/>
+<element name="műszak" type="xs:string"/>
+<element name="fizetés" type="xs:string"/>
+
+<element name="tulajdonos_név" type="xs:string"/>
+<element name="adószám" type="xs:string"/>
+<element name="alapítás" type="xs:string"/>
+<element name="bevétel" type="xs:string"/>
+
+<element name="résztvevő_név" type="xs:string"/>
+<element name="diákigazolvány" type="xs:string"/>
+
+
+<!-- komplex típusok -->
+<!-- gyökérelem refek -->
+<!-- elsődleges kulcsok -->
+<!-- idegen kulcsok -->
+
+
+</schema>
