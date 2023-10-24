@@ -153,9 +153,9 @@
 </element>
 
 <!-- elsődleges kulcsok -->
-<attribute name="FEL_ID" type="xs:key" use="required"/>
-<attribute name="FESZ_ID" type="xs:ID" use="required"/>
-<attribute name="B_ID" type="xs:ID" use="required"/>
+<attribute name="FEL_ID" type="xs:ID"/>
+<attribute name="FESZ_ID" type="xs:ID" />
+<attribute name="B_ID" type="xs:ID"/>
 <attribute name="A_ID" type="xs:ID"/>
 <attribute name="T_ID" type="xs:ID"/>
 <attribute name="R_ID" type="xs:ID"/>
