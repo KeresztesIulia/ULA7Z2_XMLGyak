@@ -27,12 +27,149 @@
 
 <element name="résztvevő_név" type="xs:string"/>
 <element name="diákigazolvány" type="xs:string"/>
+<element name="település" type="xs:string"/>
+<element name="utca" type="xs:string"/> 
+<element name="házszám" type="xs:string"/>
 
+<element name="kérdező" type="xs:string"/>
+
+<element name="nyelv" type="xs:string"/>
+<element name="szint" type="szintTípus"/>
+<simpleType name="szintTípus">
+    <restriction base="xs:string">
+        <pattern value="[A-C][1-2]"/>
+    </restriction>
+</simpleType>
 
 <!-- komplex típusok -->
-<!-- gyökérelem refek -->
-<!-- elsődleges kulcsok -->
-<!-- idegen kulcsok -->
+<element name="fellépő" type="fellépőTípus" />
+<complexType name="fellépőTípus">
+    <sequence>
+        <element ref="fellépő_név" />
+        <element ref="ország" />
+        <element ref="díj" />
+    </sequence>
+    <attribute ref="FEL_ID"/>
+    <attribute ref="FEL_FESZ"/>
+</complexType>
 
+<element name="fesztivál" type="fesztiválTípus" />
+<complexType name="fesztiválTípus">
+    <sequence>
+        <element ref="fesztivál_név" />
+        <element ref="helyszín" />
+        <element ref="év" />
+    </sequence>
+    <attribute ref="FESZ_ID"/>
+</complexType>
+
+<element name="bár" type="bárTípus" />
+<complexType name="bárTípus">
+    <sequence>
+        <element ref="bár_név" />
+        <element ref="ital" minOccurs="1" maxOccurs="unbounded" />
+        <element ref="cég" />
+    </sequence>
+    <attribute ref="B_ID"/>
+    <attribute ref="FESZ_B"/>
+</complexType>
+
+<element name="alkalmazott" type="alkalmazottTípus" />
+<complexType name="alkalmazottTípus">
+    <sequence>
+        <element ref="alkalmazott_név" />
+        <element ref="műszak" minOccurs="1" maxOccurs="unbounded" />
+        <element ref="fizetés" />
+    </sequence>
+    <attribute ref="A_ID"/>
+    <attribute ref="B_A"/>
+</complexType>
+
+<element name="tulajdonos" type="tulajdonosTípus" />
+<complexType name="tulajdonosTípus">
+    <sequence>
+        <element ref="tulajdonos_név" />
+        <element ref="adószám" />
+        <element ref="alapítás" />
+        <element ref="bevétel" />
+    </sequence>
+    <attribute ref="T_ID"/>
+    <attribute ref="FESZ_T"/>
+</complexType>
+
+<element name="lakcím" type="lakcímTípus" />
+<complexType name="lakcímTípus">
+    <sequence>
+        <element ref="település" />
+        <element ref="utca" />
+        <element ref="házszám" />
+    </sequence>
+</complexType>
+
+<element name="résztvevő" type="résztvevőTípus" />
+<complexType name="résztvevőTípus">
+    <sequence>
+        <element ref="résztvevő_név" />
+        <element ref="diákigazolvány" minOccurs="0" maxOccurs="1" />
+        <element ref="lakcím" />
+    </sequence>
+    <attribute ref="R_ID"/>
+    <attribute ref="FESZ_R"/>
+</complexType>
+
+<element name="közvélemény" type="közvéleményTípus" />
+<complexType name="közvéleményTípus">
+    <sequence>
+        <element ref="kérdező" />
+    </sequence>
+    <attribute ref="K_ID"/>
+    <attribute ref="K_R"/>
+    <attribute ref="K_NY"/>
+</complexType>
+
+<element name="nyelvtudás" type="nyelvtudásTípus" />
+<complexType name="nyelvtudásTípus">
+    <sequence>
+        <element ref="nyelv" />
+        <element ref="szint" />
+    </sequence>
+    <attribute ref="NY_ID"/>
+</complexType>
+
+<!-- gyökérelem refek -->
+<element name="Fesztivál_ULA7Z2">
+    <complexType>
+        <sequence>
+            <element ref="fellépő" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="fesztivál" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="bár" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="alkalmazott" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="tulajdonos" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="résztvevő" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="nyelvtudás" minOccurs="0" maxOccurs="unbounded" />
+            <element ref="közvélemény" minOccurs="0" maxOccurs="unbounded" />
+        </sequence>
+    </complexType>
+</element>
+
+<!-- elsődleges kulcsok -->
+<attribute name="FEL_ID" type="xs:key" use="required"/>
+<attribute name="FESZ_ID" type="xs:ID" use="required"/>
+<attribute name="B_ID" type="xs:ID" use="required"/>
+<attribute name="A_ID" type="xs:ID"/>
+<attribute name="T_ID" type="xs:ID"/>
+<attribute name="R_ID" type="xs:ID"/>
+<attribute name="NY_ID" type="xs:ID"/>
+<attribute name="K_ID" type="xs:ID"/>
+
+
+<!-- idegen kulcsok -->
+<attribute name="FEL_FESZ" type="xs:IDREF"/>
+<attribute name="FESZ_B" type="xs:IDREF"/>
+<attribute name="B_A" type="xs:IDREF"/>
+<attribute name="FESZ_T" type="xs:IDREF"/>
+<attribute name="FESZ_R" type="xs:IDREF"/>
+<attribute name="K_R" type="xs:IDREF"/>
+<attribute name="K_NY" type="xs:IDREF"/>
 
 </schema>

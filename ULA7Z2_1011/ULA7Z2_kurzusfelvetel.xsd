@@ -3,10 +3,11 @@
 <xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 <!-- egyszerű típusok -->
+<attribute name="tanev" type="tanevTípus" />
 <attribute name="egyetemNeve" type="xs:string" />
 
 <element name="hnev" type="xs:string" />
-<element name="szulnev" type="xs:string" />
+<element name="szulev" type="xs:string" />
 <element name="szak" type="xs:string" />
 <attribute name="evf" type="xs:string" />
 
@@ -17,23 +18,27 @@
 <element name="oktató" type="xs:string" />
 <element name="óraadó" type="xs:string" />
 <attribute name="id" type="xs:string" />
+<attribute name="jóváhagyás" type="jóváhagyásTípus" />
 
 
-<!-- saját típusok -->
+<!-- egyszerű saját típusok -->
 <simpleType name="tanevTípus">
-    <restriction base="string">
+    <restriction base="xs:string">
         <pattern value="20\d{2}/\d{2} [I, II]"/>
     </restriction>
 </simpleType>
 
-<simpleType name="jóváhagyás">
-    <restriction base="string">
+<simpleType name="jóváhagyásTípus">
+    <restriction base="xs:string">
         <enumeration value="igen" />
         <enumeration value="nem" />
     </restriction>
 </simpleType>
 
-<complexType name="hallgato">
+
+<!-- összetett saját típusok -->
+<element name="hallgato" type="hallgatoTípus" />
+<complexType name="hallgatoTípus">
     <sequence>
         <element ref="hnev" />
         <element ref="szulev" />
@@ -42,6 +47,38 @@
     <attribute ref="evf" />
 </complexType>
 
+<element name="kurzus" type="kurzusTípus" />
+<complexType name="kurzusTípus">
+    <sequence>
+        <element ref="kurzusnev" />
+        <element ref="kredit" />
+        <element ref="hely" />
+        <element ref="idopont" />
+        <element ref="oktató" minOccurs="0" maxOccurs="unbounded"/>
+        <element ref="óraadó" minOccurs="0" maxOccurs="unbounded"/>
+    </sequence>
+    <attribute ref="id" use="required"/>
+    <attribute ref="jóváhagyás" default="igen"/>
+</complexType>
+
+<element name="kurzusok" type="kurzusokTípus" />
+<complexType name="kurzusokTípus">
+    <sequence>
+        <element ref="kurzus" minOccurs="0" maxOccurs="unbounded" />
+    </sequence>
+</complexType>
+
+<!-- gyökérelem -->
+<element name="ULA7Z2_kurzusfelvetel">
+    <complexType>
+        <sequence>
+            <element ref="hallgato" />
+            <element ref="kurzusok" />
+        </sequence>
+        <attribute ref="tanev" use="required" />
+        <attribute ref="egyetemNeve" use="required" />
+    </complexType>
+</element>
     
 
 
