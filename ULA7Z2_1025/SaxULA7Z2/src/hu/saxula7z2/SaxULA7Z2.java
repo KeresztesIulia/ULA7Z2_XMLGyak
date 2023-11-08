@@ -9,7 +9,7 @@ import javax.xml.parsers.SAXParserFactory;
 public class SaxULA7Z2 {
 	   public static void main(String[] args){
 	     	try {	
-	         	File xml = new File("ULA7Z2_1025\\SaxULA7Z2\\ULA7Z2_kurzusfelvetel.xml");
+	         	File xml = new File("ULA7Z2_1025/SaxULA7Z2/ULA7Z2_kurzusfelvetel.xml");
 	         	SAXParserFactory spFactory = SAXParserFactory.newInstance();
 	         	SAXParser parser = spFactory.newSAXParser();
 	         	SaxHandlerULA7Z2 userhandler = new SaxHandlerULA7Z2();

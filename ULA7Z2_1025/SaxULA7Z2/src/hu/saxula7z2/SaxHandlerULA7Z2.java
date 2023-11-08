@@ -91,7 +91,7 @@ public class SaxHandlerULA7Z2 extends DefaultHandler {
 			System.out.print("óradadó");
 		}
 		
-		System.out.println(" end");
+		System.out.print(" end");
 	}
 	
 	void indent(int amount){
