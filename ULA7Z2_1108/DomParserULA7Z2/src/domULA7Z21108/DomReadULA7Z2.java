@@ -6,87 +6,63 @@ public class DomReadULA7Z2 {
     
     public static void domReader(Document document){
         Element rootElement = document.getDocumentElement();
-
-        System.out.println(rootElement.getNodeName());
-        Node hallgato = rootElement.getElementsByTagName("hallgato").item(0);     
-        //printChildren(hallgato, 0);
-
-        printAttributes((Node)rootElement);
+        printChildren((Node)rootElement, 0);
 
     }
 
     static void printChildren(Node parent, int indentAmount){
-        printNodeInfo(parent, indentAmount); // cuccok, start
+        printNodeInfo(parent, indentAmount);
         for (Node child = parent.getFirstChild(); child != null; child = child.getNextSibling()) {
             if (child.hasChildNodes()){
                 printChildren(child, indentAmount+1);
             }
             else {
-                if (child.getNodeType() == Node.TEXT_NODE && !child.getNodeValue().equals("#text")){
+                if (!isRandomNode(child)){
+                    indent(indentAmount + 1);
                     System.out.println(child.getNodeValue());
                 }
             }
         }
-        // print end
+        printNodeEnd(parent, indentAmount);
     }
 
     static void printNodeInfo(Node node, int indentAmount){
         indent(indentAmount);
         System.out.print(node.getNodeName());
         printAttributes(node);
+        System.out.println(" start");
     }
 
     static void printAttributes(Node node){
         if(node.hasAttributes()){
-            
+            System.out.print(" {");
             NamedNodeMap attrs = node.getAttributes();
             for (int i = 0; i < attrs.getLength(); i++){
                 Node attribute = attrs.item(i);
-
+                if (i > 0){
+                    System.out.print(", " + attribute.getNodeName() + ": " + attribute.getNodeValue());
+                    continue;
+                }
+                System.out.print(attribute.getNodeName() + ": " + attribute.getNodeValue());
             }
+            System.out.print("}");
         }
     }
 
-    static String nodeType(Node node){
-        switch (node.getNodeType()){
-            case Node.ATTRIBUTE_NODE:
-                return "attribute node";
+    static void printNodeEnd(Node node, int indentAmount){
+        indent(indentAmount);
+        System.out.println(node.getNodeName() + " end");
+    }
 
-            case Node.CDATA_SECTION_NODE:
-                return "cdata section node";
-
-            case Node.COMMENT_NODE:
-                return "comment node";
-
-            case Node.DOCUMENT_FRAGMENT_NODE:
-                return "doc fragment node";
-
-            case Node.DOCUMENT_NODE:
-                return "doc node";
-
-            case Node.DOCUMENT_TYPE_NODE:
-                return "doctype node";
-            case Node.ELEMENT_NODE:
-                return "element node";
-
-            case Node.ENTITY_NODE:
-                return "entity node";
-
-            case Node.ENTITY_REFERENCE_NODE:
-                return "entity ref node";
-
-            case Node.NOTATION_NODE:
-                return "notation node node";
-
-            case Node.PROCESSING_INSTRUCTION_NODE:
-                return "processing instruction node";
-
-            case Node.TEXT_NODE:
-                return "text node";
-
-            default:
-                return "idk";
+    static boolean isRandomNode(Node node){
+        if (node.getNodeType() != Node.TEXT_NODE){
+            return true;
         }
+        String value = node.getNodeValue();
+        if (value.trim().isEmpty() || value.equals("") || value.equals(" ") || value == "#text" || value == null || value.length() == 0){
+            return true;
+        }
+        return false;
     }
 
     static void indent(int amount){

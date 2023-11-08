@@ -4,15 +4,10 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.xml.sax.ErrorHandler;
 import org.xml.sax.SAXException; 
-import org.xml.sax.SAXParseException;
-import org.xml.sax.helpers.*;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
-import java.io.PrintWriter;
 
 import org.w3c.dom.Document;
 
@@ -24,7 +19,7 @@ public class DomULA7Z2 {
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
 			Document dom = db.parse(new File("ULA7Z2_1108/DomParserULA7Z2/ULA7Z2_kurzusfelvetel.xml"));
-
+			dom.normalize();
 			DomReadULA7Z2.domReader(dom);
 		}
 		catch (ParserConfigurationException pce){
