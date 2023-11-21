@@ -23,14 +23,19 @@ public class DomQueryULA7Z2 {
 		}
 
         Element root = dom.getDocumentElement();
-		kurzusokToConsole(root);
+		
+        // a)
+        kurzusokToConsole(root);
         System.out.println();
+
+        // b)
         hallgatoPrintAndWrite(root, "ULA7Z2_1115/DomQueryULA7Z2/kiiratasok/hallgatoAdatok.xml");
+        
+        // c)
         oktatokToConsole(root);
+
+        // d) adott napon lévő kurzusok kiíratása konzolra
         adottNapKurzusaiToConsole(root, "Szerda");
-
-
-
     }
 
     static Document readXML(String path){
