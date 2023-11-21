@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ULA7Z2_kurzusfelvetel egyetemNeve="ME" tanev="2023/24 I">
+    <hallgato evf="3">
+        <hnev>Keresztes Iulia</hnev>
+        <szulev>2002</szulev>
+        <szak>programtervezö informatikus</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="ULA7Z2_A1" jóváhagyás="igen">
+            <kurzusnev>Idegennyelv I.</kurzusnev>
+            <kredit>0</kredit>
+            <hely>A5/202</hely>
+            <idopont>Hétfö, 12-14</idopont>
+            <oktató>Pásztor Krisztina</oktató>
+            <óraadó>plusz óraadó</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_MElm">
+            <kurzusnev>Mesterséges intelligencia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII. elöadó</hely>
+            <idopont>Kedd, 10-12</idopont>
+            <oktató>Kunné Tamás Judit</oktató>
+            <óraadó>Fazekas Levente</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_XMLElm">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII. elöadó</hely>
+            <idopont>Kedd, 12-14</idopont>
+            <oktató>Bednarik László</oktató>
+            <óraadó>plusz óraadó</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_Alg">
+            <kurzusnev>Algoritmusok és vizsgálatuk</kurzusnev>
+            <kredit>5</kredit>
+            <hely>A1/320</hely>
+            <idopont>Kedd, 14-18</idopont>
+            <oktató>Házy Attila</oktató>
+            <óraadó>plusz óraadó</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_XMLGyak">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/101</hely>
+            <idopont>Szerda, 12-14</idopont>
+            <óraadó>Bednarik László</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_VElm">
+            <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/101</hely>
+            <idopont>Szerda, 14-16</idopont>
+            <oktató>Sasvári Péter</oktató>
+            <óraadó>plusz óraadó</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_VGyak">
+            <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/101</hely>
+            <idopont>Szerda, 18-20</idopont>
+            <óraadó>Sasvári Péter</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_MGyak">
+            <kurzusnev>Mesterséges intelligencia</kurzusnev>
+            <kredit>5</kredit>
+            <hely>III. elöadó</hely>
+            <idopont>Csütörtök, 10-12</idopont>
+            <óraadó>Fazekas Levente</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_VRob">
+            <kurzusnev>Versenyrobotok programozása</kurzusnev>
+            <kredit>3</kredit>
+            <idopont>Csütörtök, 14-16</idopont>
+            <óraadó>Lengyelné Szilágyi Szivia</óraadó>
+            <óraadó>Körei Attila</óraadó>
+        </kurzus>
+
+        <kurzus id="ULA7Z2_JProto">
+            <kurzusnev>Játékprototípusok</kurzusnev>
+            <kredit>5</kredit>
+            <hely>Inf/15</hely>
+            <idopont>Csütörtök, 16-20</idopont>
+            <óraadó>Kis Áron</óraadó>
+        </kurzus>
+
+    </kurzusok>
+
+</ULA7Z2_kurzusfelvetel>

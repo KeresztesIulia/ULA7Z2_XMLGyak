@@ -1,0 +1,12 @@
+{
+    "java.project.sourcePaths": [
+        "ULA7Z2_1025\\SaxULA7Z2\\src",
+        "ULA7Z2_1108\\DomParserULA7Z2 copy\\src",
+        "ULA7Z2_1108\\DomParserULA7Z2\\src",
+        "ULA7Z2_1108\\DomWriteULA7Z2\\src",
+        "ULA7Z2_1115\\assd\\DomModifyULA7Z2\\src",
+        "ULA7Z2_1115\\DomModifyULA7Z2\\DomModifyULA7Z2\\src",
+        "ULA7Z2_1115\\DomModifyULA7Z2\\src",
+        "ULA7Z2_1115\\DomQueryULA7Z2\\src"
+    ]
+}
