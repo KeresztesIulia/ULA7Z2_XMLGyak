@@ -32,6 +32,12 @@ public class DomModifyULA7Z2 {
 
         // c) Napok nevének lerövidítése az időpont elemeknél (pl. Hétfő -> H)
         napRövidítések(domAllNodes, dom);
+
+        // új kurzus hozzáadása
+        addKurzus(dom, domAllNodes, "NEW_1", null, "új kurzus", 2, "XXX. előadó", "Szerda, 10-12", new String[]{"óktató1", "oktató2"}, new String[]{"óraadó1"});
+        
+        System.out.println("\nA módosítások után:");
+        DomReaderULA7Z2.domReader(dom);
     }
 
     static Document readXML(String path){
@@ -92,8 +98,6 @@ public class DomModifyULA7Z2 {
                 nodeDictionary.get("óraadó").add(újÓraadó);
             }
         }
-
-        DomReaderULA7Z2.domReader(dom);
         DomWriterULA7Z2.domToXML(dom, path);
     }
 
@@ -104,8 +108,6 @@ public class DomModifyULA7Z2 {
                 ((Element)kurzus).setAttribute("jóváhagyás", "igen");
             }
         }
-
-        DomReaderULA7Z2.domReader(dom);
     }
 
     static void napRövidítések(Map<String, List<Node>> nodeDictionary, Document dom){
@@ -121,8 +123,90 @@ public class DomModifyULA7Z2 {
 
             időpont.setTextContent(időpontString);
         }
-
-        DomReaderULA7Z2.domReader(dom);
     }
+
+    static void addKurzus(Document dom, Map<String, List<Node>> nodeDictionary, String idAttribute, String jóváhagyásAttribute, String kurzusnev, int kredit, String hely, String idopont, String[] oktatók, String[] óraadók){
+        // kurzus szülő létrehozása
+        Node kurzusNode = dom.createElement("kurzus");
+        ((Element)kurzusNode).setAttribute("id", idAttribute);
+        if (jóváhagyásAttribute == null){
+            jóváhagyásAttribute = "";
+        }
+        if (jóváhagyásAttribute.equals("nem") || jóváhagyásAttribute.equals("igen") || jóváhagyásAttribute.isEmpty()){
+            if (!jóváhagyásAttribute.isEmpty())
+            {
+                ((Element)kurzusNode).setAttribute("jóváhagyás", jóváhagyásAttribute);
+            }
+        }
+        else{
+            System.err.println("A jóváhagyás csak 'igen' vagy 'nem' lehet, vagy üres");
+        }
+        // ha még nincs kurzusok csomópont, azt is létrehozza
+        if (nodeDictionary.get("kurzusok") == null){
+            nodeDictionary.put("kurzusok", new ArrayList<>());
+            Node kurzusokNode = dom.createElement("kurzusok");
+            dom.getDocumentElement().appendChild(kurzusokNode);
+            nodeDictionary.get("kurzusok").add(kurzusokNode);
+        }
+        nodeDictionary.get("kurzusok").get(0).appendChild(kurzusNode);
+        
+        // kurzusnév csomópont létrehozása
+        Node kurzusnevNode = dom.createElement("kurzusnev");
+        kurzusnevNode.setTextContent(kurzusnev);
+        kurzusNode.appendChild(kurzusnevNode);
+        if (nodeDictionary.get("kurzusnev") == null)
+            nodeDictionary.put("kurzusnev", new ArrayList<>());
+        nodeDictionary.get("kurzusnev").add(kurzusnevNode);
+
+        // kredit csomópont létrehozása
+        Node kreditNode = dom.createElement("kredit");
+        String kreditString = String.valueOf(kredit);
+        kreditNode.setTextContent(kreditString);
+        kurzusNode.appendChild(kreditNode);
+        if (nodeDictionary.get("kredit") == null)
+            nodeDictionary.put("kredit", new ArrayList<>());
+        nodeDictionary.get("kredit").add(kreditNode);
+
+        // hely csomópont hozzáadása
+        Node helyNode = dom.createElement("hely");
+        helyNode.setTextContent(hely);
+        kurzusNode.appendChild(helyNode);
+        if (nodeDictionary.get("hely") == null)
+            nodeDictionary.put("hely", new ArrayList<>());
+        nodeDictionary.get("hely").add(helyNode);
+
+        // időpont csomópont hozzáadása
+        Node idopontNode = dom.createElement("idopont");
+        idopontNode.setTextContent(idopont);
+        kurzusNode.appendChild(idopontNode);
+        if (nodeDictionary.get("idopont") == null)
+            nodeDictionary.put("idopont", new ArrayList<>());
+        nodeDictionary.get("idopont").add(idopontNode);
+
+        // oktató csomópontok hozzáadása
+        for (String oktató : oktatók){
+            Node oktatóNode = dom.createElement("oktató");
+            oktatóNode.setTextContent(oktató);
+            kurzusNode.appendChild(oktatóNode);
+            if (nodeDictionary.get("oktató") == null)
+                nodeDictionary.put("oktató", new ArrayList<>());
+            nodeDictionary.get("oktató").add(oktatóNode);
+        }
+
+        // óraadó csomópontok hozzáadása
+        for (String óraadó : óraadók){
+            Node óraadóNode = dom.createElement("óraadó");
+            óraadóNode.setTextContent(óraadó);
+            kurzusNode.appendChild(óraadóNode);
+            if (nodeDictionary.get("óraadó") == null)
+                nodeDictionary.put("óraadó", new ArrayList<>());
+            nodeDictionary.get("óraadó").add(óraadóNode);
+        }
+
+        System.out.println("Az új csomópont:");
+        DomReaderULA7Z2.printChildren(kurzusNode, 0);
+
+    }
+
 
 }
