@@ -16,6 +16,7 @@ import org.w3c.dom.*;
 public class DomQueryULA7Z2 {
     public static void main(String[] args) throws Exception {
         String readPath = "ULA7Z2_1115/DomQueryULA7Z2/kurzusfelvetelULA7Z2.xml";
+        String writePath = "ULA7Z2_1115/DomQueryULA7Z2/kiiratasok/hallgatoAdatok.xml";
 		Document dom = readXML(readPath);
 		if (dom == null){
 			System.err.println("XML reading error!");
@@ -29,7 +30,7 @@ public class DomQueryULA7Z2 {
         System.out.println();
 
         // b)
-        hallgatoPrintAndWrite(root, "ULA7Z2_1115/DomQueryULA7Z2/kiiratasok/hallgatoAdatok.xml");
+        hallgatoPrintAndWrite(root, writePath);
         
         // c)
         oktatokToConsole(root);
@@ -42,7 +43,7 @@ public class DomQueryULA7Z2 {
         try{
 			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			DocumentBuilder db = dbf.newDocumentBuilder();
-			Document dom = db.parse(new File("ULA7Z2_1108/DomParserULA7Z2/ULA7Z2_kurzusfelvetel.xml"));
+			Document dom = db.parse(new File(path));
 			dom.normalize();
             return dom;
 		}

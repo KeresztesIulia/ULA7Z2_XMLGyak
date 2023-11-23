@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- egyszerű típusok -->
+<element name="keresztnev" type="xs:string" />
+<element name="vezeteknev" type="xs:string" />
+<element name="becenev" type="xs:string" />
+<element name="kor" type="xs:int" />
+
+<attribute name="id" type="xs:ID"/>
+
+<!-- összetett típus -->
+<element name="student">
+    <complexType>
+        <sequence>
+            <element ref="keresztnev" />
+            <element ref="vezeteknev" />
+            <element ref="becenev" minOccurs="0" />
+            <element ref="kor"/>
+        </sequence>
+    </complexType>
+</element>
+
+<!-- gyökérelem -->
+<element name="class">
+    <complexType>
+        <sequence>
+            <element ref="student" />
+        </sequence>
+        <attribute ref="id" />
+    </complexType>
+</element>
+
+
+
+</schema>

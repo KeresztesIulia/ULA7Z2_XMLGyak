@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class xmlns:xs="http://www.w3.org/2001/XMLSchema" xs:noNamespaceSchemaLocation="studentULA7Z2.xsd">
+    <student id="01">
+        <keresztnev>Pista</keresztnev>
+        <vezeteknev>Ferenc</vezeteknev>
+        <kor>22</kor>
+    </student>
+
+    <student>
+        <keresztnev>Ágota</keresztnev>
+        <vezeteknev>Aranyosi</vezeteknev>
+        <becenev>Ági</becenev>
+        <kor>24</kor>
+    </student>
+
+    <student>
+        <keresztnev>Márton</keresztnev>
+        <vezeteknev>Malmos</vezeteknev>
+        <becenev>Már</becenev>
+        <kor>20</kor>
+    </student>
+
+    <student id="02">
+        <keresztnev>Ottó</keresztnev>
+        <vezeteknev>Erőss</vezeteknev>
+        <kor>22</kor>
+    </student>
+
+    <student id="03">
+        <keresztnev>Edina</keresztnev>
+        <vezeteknev>Békés</vezeteknev>
+        <becenev>Na</becenev>
+        <kor>20</kor>
+    </student>
+
+    <student>
+        <keresztnev>Helén</keresztnev>
+        <vezeteknev>Árkos</vezeteknev>
+        <kor>25</kor>
+    </student>
+
+    <student id="04">
+        <keresztnev>Éva</keresztnev>
+        <vezeteknev>Évai</vezeteknev>
+        <kor>21</kor>
+    </student>
+
+    <student>
+        <keresztnev>Elemér</keresztnev>
+        <vezeteknev>Kári</vezeteknev>
+        <becenev>Emi</becenev>
+        <kor>19</kor>
+    </student>
+</class>
