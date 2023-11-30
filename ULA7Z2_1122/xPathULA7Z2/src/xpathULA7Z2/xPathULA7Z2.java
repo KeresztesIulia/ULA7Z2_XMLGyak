@@ -21,7 +21,7 @@ public class xPathULA7Z2 {
 		XPath xPath = XPathFactory.newInstance().newXPath();
 
 		// expression-ok
-		String expression1 = "/class/student";
+		String expression1 = "class/student";
 		String expression2 = "//student[@id='02']";
 		String expression3 = "//student";
 		String expression4 = "/class/student[2]";
@@ -108,7 +108,7 @@ public class xPathULA7Z2 {
 		System.out.println("\n\n10) Válassza ki a dokumentum összes elemét!");
 		printNodeList(allElements);
 
-		System.out.println("\n\n11) VÁlassza ki a class root element összes student elemét, amelynél a kor>20!");
+		System.out.println("\n\n11) Válassza ki a class root element összes student elemét, amelynél a kor>20!");
 		printNodeList(classStudentsOlderThan20yo);
 
 		System.out.println("\n\n12) Válassza ki az összes student elem összes keresztnév és vezetéknév csomópontját!");
