@@ -1,85 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 <!-- egyszerű típusok -->
-<attribute name="tanev" type="tanevTípus" />
-<attribute name="egyetemNeve" type="string" />
+<xs:attribute name="tanev" type="tanevTípus" />
+<xs:attribute name="egyetemNeve" type="xs:string" />
 
-<element name="hnev" type="string" />
-<element name="szulev" type="string" />
-<element name="szak" type="string" />
-<attribute name="evf" type="string" />
+<xs:element name="hnev" type="xs:string" />
+<xs:element name="szulev" type="xs:string" />
+<xs:element name="szak" type="xs:string" />
+<xs:attribute name="evf" type="xs:string" />
 
-<element name="kurzusnev" type="string" />
-<element name="kredit" type="string" />
-<element name="hely" type="string" />
-<element name="idopont" type="string" />
-<element name="oktató" type="string" />
-<element name="óraadó" type="string" />
-<attribute name="id" type="string" />
-<attribute name="jóváhagyás" type="jóváhagyásTípus" />
+<xs:element name="kurzusnev" type="xs:string" />
+<xs:element name="kredit" type="xs:string" />
+<xs:element name="hely" type="xs:string" />
+<xs:element name="idopont" type="xs:string" />
+<xs:element name="oktató" type="xs:string" />
+<xs:element name="óraadó" type="xs:string" />
+<xs:attribute name="id" type="xs:string" />
+<xs:attribute name="jóváhagyás" type="jóváhagyásTípus" />
 
 
 <!-- egyszerű saját típusok -->
-<simpleType name="tanevTípus">
-    <restriction base="string">
-        <pattern value="20\d{2}/\d{2} [I, II]"/>
-    </restriction>
-</simpleType>
+<xs:simpleType name="tanevTípus">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="20\d{2}/\d{2} [I, II]"/>
+    </xs:restriction>
+</xs:simpleType>
 
-<simpleType name="jóváhagyásTípus">
-    <restriction base="string">
-        <enumeration value="igen" />
-        <enumeration value="nem" />
-    </restriction>
-</simpleType>
+<xs:simpleType name="jóváhagyásTípus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="igen" />
+        <xs:enumeration value="nem" />
+    </xs:restriction>
+</xs:simpleType>
 
 
 <!-- összetett saját típusok -->
-<element name="hallgato" type="hallgatoTípus" />
-<complexType name="hallgatoTípus">
-    <sequence>
-        <element ref="hnev" />
-        <element ref="szulev" />
-        <element ref="szak" />
-    </sequence>
-    <attribute ref="evf" />
-</complexType>
+<xs:element name="hallgato" type="hallgatoTípus" />
+<xs:complexType name="hallgatoTípus">
+    <xs:sequence>
+        <xs:element ref="hnev" />
+        <xs:element ref="szulev" />
+        <xs:element ref="szak" />
+    </xs:sequence>
+    <xs:attribute ref="evf" />
+</xs:complexType>
 
-<element name="kurzus" type="kurzusTípus" />
-<complexType name="kurzusTípus">
-    <sequence>
-        <element ref="kurzusnev" />
-        <element ref="kredit" />
-        <element ref="hely" />
-        <element ref="idopont" />
-        <element ref="oktató" minOccurs="0" maxOccurs="unbounded"/>
-        <element ref="óraadó" minOccurs="0" maxOccurs="unbounded"/>
-    </sequence>
-    <attribute ref="id" use="required"/>
-    <attribute ref="jóváhagyás" default="igen"/>
-</complexType>
+<xs:element name="kurzus" type="kurzusTípus" />
+<xs:complexType name="kurzusTípus">
+    <xs:sequence>
+        <xs:element ref="kurzusnev" />
+        <xs:element ref="kredit" />
+        <xs:element ref="hely" />
+        <xs:element ref="idopont" />
+        <xs:element ref="oktató" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:element ref="óraadó" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <xs:attribute ref="id" use="required"/>
+    <xs:attribute ref="jóváhagyás" default="igen"/>
+</xs:complexType>
 
-<element name="kurzusok" type="kurzusokTípus" />
-<complexType name="kurzusokTípus">
-    <sequence>
-        <element ref="kurzus" minOccurs="0" maxOccurs="unbounded" />
-    </sequence>
-</complexType>
+<xs:element name="kurzusok" type="kurzusokTípus" />
+<xs:complexType name="kurzusokTípus">
+    <xs:sequence>
+        <xs:element ref="kurzus" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
 
 <!-- gyökérelem -->
-<element name="ULA7Z2_kurzusfelvetel">
-    <complexType>
-        <sequence>
-            <element ref="hallgato" />
-            <element ref="kurzusok" />
-        </sequence>
-        <attribute ref="tanev" use="required" />
-        <attribute ref="egyetemNeve" use="required" />
-    </complexType>
-</element>
+<xs:element name="ULA7Z2_kurzusfelvetel">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="hallgato" />
+            <xs:element ref="kurzusok" />
+        </xs:sequence>
+        <xs:attribute ref="tanev" use="required" />
+        <xs:attribute ref="egyetemNeve" use="required" />
+    </xs:complexType>
+</xs:element>
     
 
 
-</schema>
+</xs:schema>
