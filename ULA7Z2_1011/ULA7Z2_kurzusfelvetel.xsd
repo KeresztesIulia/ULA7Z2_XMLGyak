@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 <!-- egyszerű típusok -->
 <attribute name="tanev" type="tanevTípus" />
-<attribute name="egyetemNeve" type="xs:string" />
+<attribute name="egyetemNeve" type="string" />
 
-<element name="hnev" type="xs:string" />
-<element name="szulev" type="xs:string" />
-<element name="szak" type="xs:string" />
-<attribute name="evf" type="xs:string" />
+<element name="hnev" type="string" />
+<element name="szulev" type="string" />
+<element name="szak" type="string" />
+<attribute name="evf" type="string" />
 
-<element name="kurzusnev" type="xs:string" />
-<element name="kredit" type="xs:string" />
-<element name="hely" type="xs:string" />
-<element name="idopont" type="xs:string" />
-<element name="oktató" type="xs:string" />
-<element name="óraadó" type="xs:string" />
-<attribute name="id" type="xs:string" />
+<element name="kurzusnev" type="string" />
+<element name="kredit" type="string" />
+<element name="hely" type="string" />
+<element name="idopont" type="string" />
+<element name="oktató" type="string" />
+<element name="óraadó" type="string" />
+<attribute name="id" type="string" />
 <attribute name="jóváhagyás" type="jóváhagyásTípus" />
 
 
 <!-- egyszerű saját típusok -->
 <simpleType name="tanevTípus">
-    <restriction base="xs:string">
+    <restriction base="string">
         <pattern value="20\d{2}/\d{2} [I, II]"/>
     </restriction>
 </simpleType>
 
 <simpleType name="jóváhagyásTípus">
-    <restriction base="xs:string">
+    <restriction base="string">
         <enumeration value="igen" />
         <enumeration value="nem" />
     </restriction>
@@ -82,4 +82,4 @@
     
 
 
-</xs:schema>
+</schema>

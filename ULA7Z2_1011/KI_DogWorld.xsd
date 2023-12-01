@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<xs:schema xmlns:xs="https://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
 <xs:element name="konyvek">
     <xs:complexType>
@@ -11,7 +11,7 @@
                         <xs:element name="cim" type="xs:string" minOccurs="0" maxOccurs="1"/>
                         <xs:element name="szerzo" type="xs:string" />
 
-                        <xs:element name="szereplo" type="xs:string" minOccurs="0" maxOccurs="20">
+                        <xs:element name="szereplo" minOccurs="0" maxOccurs="20">
                             <xs:complexType>
                                 <xs:sequence>
                                     <xs:element name="nev" type="xs:string" />
