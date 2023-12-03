@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- Egyszerű típusú elemek -->
+<xs:element name="felhasználónév" type="xs:string" />
+<xs:element name="megjelenítettNév" type="xs:string" />
+<xs:element name="fiókLétrehozásánakDátuma" type="xs:date" />
+<xs:element name="születésiDátum" type="xs:date" />
+
+<xs:element name="teljesítményElérésénekDátuma" type="xs:date" />
+
+<xs:element name="teljesítményNeve" type="xs:string" />
+<xs:element name="teljesítményLeírása" type="xs:string" />
+<xs:element name="teljesítményHozzáadásánakDátuma" type="xs:date" />
+
+<xs:element name="játékNeve" type="xs:string" />
+<xs:element name="ár" type="xs:float" />
+<xs:element name="kiadásDátuma" type="xs:date" />
+<xs:element name="műfaj" type="műfajTípus" />
+<xs:element name="százalék" type="xs:int" />
+<xs:element name="kezdés" type="xs:dateTime" />
+<xs:element name="vége" type="xs:dateTime" />
+
+<xs:element name="stúdióNeve" type="xs:string" />
+<xs:element name="bemutatóSzöveg" type="xs:string" />
+<xs:element name="alapításÉve" type="xs:gYear" />
+
+<xs:element name="főoldal" type="xs:string" />
+<xs:element name="Youtube" type="xs:string" />
+<xs:element name="Facebook" type="xs:string" />
+<xs:element name="egyéb" type="xs:string" />
+
+<xs:element name="felirat" type="igazságértékTípus" />
+<xs:element name="hang" type="igazságértékTípus" />
+
+<xs:element name="játékHozzáadásánakDátuma" type="xs:date" />
+<xs:element name="állapot" type="állapotTípus" />
+<xs:element name="játszásIdőtartama" type="xs:int" />
+
+
+<!-- Saját egyszerű típus deklarációk -->
+<xs:simpleType name="műfajTípus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="fantasy" />
+        <xs:enumeration value="horror" />
+        <xs:enumeration value="akció" />
+        <xs:enumeration value="kaland" />
+        <xs:enumeration value="rejtély" />
+        <xs:enumeration value="romantikus" />
+        <xs:enumeration value="RPG" />
+        <xs:enumeration value="shooter" />
+        <xs:enumeration value="multiplayer" />
+        <xs:enumeration value="singleplayer" />
+        <xs:enumeration value="FPS" />
+        <xs:enumeration value="belső-nézetes" />
+        <xs:enumeration value="külső-nézetes" />
+        <xs:enumeration value="indie" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="igazságértékTípus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="igen" />
+        <xs:enumeration value="nem" />
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="állapotTípus">
+    <xs:restriction base="xs:string">
+        <xs:enumeration value="kívánságlistán" />
+        <xs:enumeration value="kosárban" />
+        <xs:enumeration value="megvéve" />
+    </xs:restriction>
+</xs:simpleType>
+
+
+<!-- Elsődleges kulcsok -->
+<xs:attribute name="FID" type="xs:ID" />
+<xs:attribute name="TID" type="xs:ID" />
+<xs:attribute name="JID" type="xs:ID" />
+<xs:attribute name="SID" type="xs:ID" />
+<xs:attribute name="WID" type="xs:ID" />
+<xs:attribute name="NyID" type="xs:ID" />
+
+
+<!-- Idegenkulcsok -->
+<xs:attribute name="felhasználó1" type="xs:IDREF" />
+<xs:attribute name="felhasználó2" type="xs:IDREF" />
+<xs:attribute name="teljesítő" type="xs:IDREF" />
+<xs:attribute name="teljesítettTeljesítmény" type="xs:IDREF" />
+<xs:attribute name="T_játék" type="xs:IDREF" />
+<xs:attribute name="alapjáték" type="xs:IDREF" />
+<xs:attribute name="fejlesztő" type="xs:IDREF" />
+<xs:attribute name="kiadó" type="xs:IDREF" />
+<xs:attribute name="W_stúdió" type="xs:IDREF" />
+<xs:attribute name="TNY_játék" type="xs:IDREF" />
+<xs:attribute name="TNY_nyelv" type="xs:IDREF" />
+<xs:attribute name="HJ_játék" type="xs:IDREF" />
+<xs:attribute name="HJ_felhasználó" type="xs:IDREF" />
+
+
+<!-- Komplex típusú elemek -->
+<xs:element name="barátok" type="barátokTípus" />
+<xs:element name="barát" type="barátTípus" />
+
+<xs:element name="felhasználók" type="felhasználókTípus">
+    <xs:key name="felhasználóID">
+        <xs:selector xpath="felhasználó" />
+        <xs:field xpath="@FID" />
+    </xs:key>
+</xs:element>
+<xs:element name="felhasználó" type="felhasználóTípus" />
+
+<xs:element name="elértTeljesítmények" type="elértTeljesítményekTípus" />
+<xs:element name="elértTeljesítmény" type="elértTeljesítményTípus" />
+
+<xs:element name="teljesítmények" type="teljesítményekTípus">
+    <xs:key name="teljesítményID">
+        <xs:selector xpath="teljesítmény" />
+        <xs:field xpath="@TID" />
+    </xs:key>
+</xs:element>
+<xs:element name="teljesítmény" type="teljesítményTípus" />
+
+<xs:element name="játékok" type="játékokTípus">
+    <xs:key name="játékID">
+        <xs:selector xpath="játék" />
+        <xs:field xpath="@JID" />
+    </xs:key>
+</xs:element>
+<xs:element name="játék" type="játékTípus" />
+<xs:element name="műfajok" type="műfajokTípus" />
+<xs:element name="leárazás" type="leárazásTípus" />
+
+<xs:element name="stúdiók" type="stúdiókTípus">
+    <xs:key name="stúdióID">
+        <xs:selector xpath="stúdió" />
+        <xs:field xpath="@SID" />
+    </xs:key>
+</xs:element>
+<xs:element name="stúdió" type="stúdióTípus" />
+
+<xs:element name="weboldalak" type="weboldalakTípus">
+    <xs:key name="weboldalID">
+        <xs:selector xpath="weboldal" />
+        <xs:field xpath="@WID" />
+    </xs:key>
+    <xs:unique name="W_stúdióUNIQUE">
+        <xs:selector xpath="weboldal" />
+        <xs:field xpath="@W_stúdió" />
+    </xs:unique>
+</xs:element>
+<xs:element name="weboldal" type="weboldalTípus" />
+
+<xs:element name="támogatottNyelvek" type="támogatottNyelvekTípus" />
+<xs:element name="támogatottNyelv" type="támogatottNyelvTípus" />
+
+<xs:element name="nyelvek" type="nyelvekTípus">
+    <xs:key name="nyelvID">
+        <xs:selector xpath="nyelv"/>
+        <xs:field xpath="@NyID" />
+    </xs:key>
+</xs:element>
+<xs:element name="nyelv" type="nyelvTípus" />
+
+<xs:element name="hozzáadottJátékok" type="hozzáadottJátékokTípus" />
+<xs:element name="hozzáadottJáték" type="hozzáadottJátékTípus" />
+
+
+<!-- Komplex típus deklarációk -->
+<xs:complexType name="barátokTípus">
+    <xs:sequence>
+        <xs:element ref="barát" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="barátTípus">
+    <xs:attribute ref="felhasználó1" use="required" />
+    <xs:attribute ref="felhasználó2" use="required" />
+</xs:complexType>
+
+<xs:complexType name="felhasználókTípus">
+    <xs:sequence>
+        <xs:element ref="felhasználó" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="felhasználóTípus">
+    <xs:sequence>
+        <xs:element ref="felhasználónév" />
+        <xs:element ref="megjelenítettNév" minOccurs="0" />
+        <xs:element ref="fiókLétrehozásánakDátuma" />
+        <xs:element ref="születésiDátum" />
+    </xs:sequence>
+    <xs:attribute ref="FID" use="required"/>
+</xs:complexType>
+
+<xs:complexType name="elértTeljesítményekTípus">
+    <xs:sequence>
+        <xs:element ref="elértTeljesítmény" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="elértTeljesítményTípus">
+    <xs:sequence>
+        <xs:element ref="teljesítményElérésénekDátuma" />
+    </xs:sequence>
+    <xs:attribute ref="teljesítő" use="required"/>
+    <xs:attribute ref="teljesítettTeljesítmény" use="required" />
+</xs:complexType>
+
+<xs:complexType name="teljesítményekTípus">
+    <xs:sequence>
+        <xs:element ref="teljesítmény" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="teljesítményTípus">
+    <xs:sequence>
+        <xs:element ref="teljesítményNeve" />
+        <xs:element ref="teljesítményLeírása" minOccurs="0" />
+        <xs:element ref="teljesítményHozzáadásánakDátuma" />
+    </xs:sequence>
+    <xs:attribute ref="TID" use="required" />
+    <xs:attribute ref="T_játék" use="optional" />
+</xs:complexType>
+
+<xs:complexType name="játékokTípus">
+    <xs:sequence>
+        <xs:element ref="játék" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="játékTípus">
+    <xs:sequence>
+        <xs:element ref="játékNeve" />
+        <xs:element ref="ár" />
+        <xs:element ref="kiadásDátuma" />
+        <xs:element ref="műfajok" minOccurs="0" />
+        <xs:element ref="leárazás" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute ref="JID" use="required" />
+    <xs:attribute ref="alapjáték" use="optional" />
+    <xs:attribute ref="fejlesztő" use="required" />
+    <xs:attribute ref="kiadó" use="required" />
+</xs:complexType>
+<xs:complexType name="műfajokTípus">
+    <xs:sequence>
+        <xs:element ref="műfaj" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="leárazásTípus">
+    <xs:sequence>
+        <xs:element ref="százalék" />
+        <xs:element ref="kezdés" />
+        <xs:element ref="vége" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="stúdiókTípus">
+    <xs:sequence>
+        <xs:element ref="stúdió" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="stúdióTípus">
+    <xs:sequence>
+        <xs:element ref="stúdióNeve" />
+        <xs:element ref="bemutatóSzöveg" minOccurs="0" />
+        <xs:element ref="alapításÉve" />
+    </xs:sequence>
+    <xs:attribute ref="SID" use="required" />
+</xs:complexType>
+
+<xs:complexType name="weboldalakTípus">
+    <xs:sequence>
+        <xs:element ref="weboldal" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="weboldalTípus">
+    <xs:sequence>
+        <xs:element ref="főoldal" />
+        <xs:element ref="Youtube" minOccurs="0" />
+        <xs:element ref="Facebook" minOccurs="0" />
+        <xs:element ref="egyéb" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute ref="WID" use="required" />
+    <xs:attribute ref="W_stúdió" use="required" />
+</xs:complexType>
+
+<xs:complexType name="támogatottNyelvekTípus">
+    <xs:sequence>
+        <xs:element ref="támogatottNyelv" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="támogatottNyelvTípus">
+    <xs:sequence>
+        <xs:element ref="felirat" />
+        <xs:element ref="hang" />
+    </xs:sequence>
+    <xs:attribute ref="TNY_játék" use="required" />
+    <xs:attribute ref="TNY_nyelv" use="required" />
+</xs:complexType>
+
+<xs:complexType name="nyelvekTípus">
+    <xs:sequence>
+        <xs:element ref="nyelv" maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="nyelvTípus">
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute ref="NyID" use="required" />
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+
+<xs:complexType name="hozzáadottJátékokTípus">
+    <xs:sequence>
+        <xs:element ref="hozzáadottJáték" maxOccurs="unbounded" />
+    </xs:sequence>
+</xs:complexType>
+<xs:complexType name="hozzáadottJátékTípus">
+    <xs:sequence>
+        <xs:element ref="játékHozzáadásánakDátuma" />
+        <xs:element ref="állapot" />
+        <xs:element ref="játszásIdőtartama" minOccurs="0" />
+    </xs:sequence>
+    <xs:attribute ref="HJ_játék" use="required" />
+    <xs:attribute ref="HJ_felhasználó" use="required" />
+</xs:complexType>
+
+
+<!-- Gyökérelem -->
+<xs:complexType name="XMLTASKULA7Z2Típus">
+    <xs:sequence>
+        <xs:element ref="játékok" />
+        <xs:element ref="stúdiók" />
+        <xs:element ref="weboldalak" minOccurs="0" />
+        <xs:element ref="teljesítmények" minOccurs="0" />
+        <xs:element ref="nyelvek" minOccurs="0" />
+        <xs:element ref="támogatottNyelvek" minOccurs="0" />
+        <xs:element ref="felhasználók" minOccurs="0" />
+        <xs:element ref="barátok" minOccurs="0" />
+        <xs:element ref="hozzáadottJátékok" minOccurs="0" />
+        <xs:element ref="elértTeljesítmények" minOccurs="0" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="XMLTaskULA7Z2" type="XMLTASKULA7Z2Típus">
+    <!-- idegenkulcs megkötések-->
+    <xs:keyref name="felhasználó1REF" refer="felhasználóID">
+        <xs:selector xpath="barátok/barát" />
+        <xs:field xpath="@felhasználó1" />
+    </xs:keyref>
+    <xs:keyref name="felhasználó2REF" refer="felhasználóID">
+        <xs:selector xpath="barátok/barát" />
+        <xs:field xpath="@felhasználó2" />
+    </xs:keyref>
+
+    <xs:keyref name="teljesítőREF" refer="felhasználóID">
+        <xs:selector xpath="elértTeljesítmények/elértTeljesítmény" />
+        <xs:field xpath="@teljesítő" />
+    </xs:keyref>
+    <xs:keyref name="teljesítettTeljesítményREF" refer="teljesítményID">
+        <xs:selector xpath="elértTeljesítmények/elértTeljesítmény" />
+        <xs:field xpath="@teljesítettTeljesítmény" />
+    </xs:keyref>
+    
+    <xs:keyref name="T_játékREF" refer="játékID">
+        <xs:selector xpath="teljesítmények/teljesítmény" />
+        <xs:field xpath="@T_játék" />
+    </xs:keyref>
+    
+    <xs:keyref name="fejlesztőREF" refer="stúdióID">
+        <xs:selector xpath="játékok/játék" />
+        <xs:field xpath="@fejlesztő" />
+    </xs:keyref>
+    <xs:keyref name="kiadóREF" refer="stúdióID">
+        <xs:selector xpath="játékok/játék" />
+        <xs:field xpath="@kiadó" />
+    </xs:keyref>
+
+    <xs:keyref name="W_stúdióREF" refer="stúdióID">
+        <xs:selector xpath="weboldalak/weboldal" />
+        <xs:field xpath="@W_stúdió" />
+    </xs:keyref>
+
+    <xs:keyref name="TNY_játékREF" refer="játékID">
+        <xs:selector xpath="támogatottNyelvek/támogatottNyelv" />
+        <xs:field xpath="@TNY_játék" />
+    </xs:keyref>
+    <xs:keyref name="TNY_nyelvREF" refer="nyelvID">
+        <xs:selector xpath="támogatottNyelvek/támogatottNyelv" />
+        <xs:field xpath="@TNY_nyelv" />
+    </xs:keyref>
+
+    <xs:keyref name="HJ_játékREF" refer="játékID">
+        <xs:selector xpath="hozzáadottJátékok/hozzáadottJáték" />
+        <xs:field xpath="@HJ_játék" />
+    </xs:keyref>
+    <xs:keyref name="HJ_felhasználóREF" refer="felhasználóID">
+        <xs:selector xpath="hozzáadottJátékok/hozzáadottJáték" />
+        <xs:field xpath="@HJ_felhasználó"></xs:field>
+    </xs:keyref>
+</xs:element>
+
+</xs:schema>
