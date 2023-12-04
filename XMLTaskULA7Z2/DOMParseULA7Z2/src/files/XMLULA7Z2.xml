@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMLTaskULA7Z2>
+    <!-- Játékok -->
+    <játékok>
+        <játék JID="AC3" fejlesztő="Ubi" kiadó="Ubi">
+            <játékNeve>Assassin's Creed III</játékNeve>
+            <ár>35</ár>
+            <kiadásDátuma>2012-10-30</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>kaland</műfaj>
+            </műfajok>
+        </játék>
+
+        <játék JID="TESVDB" alapjáték="TESV" fejlesztő="BethGS" kiadó="BethSW">
+            <játékNeve>Dragonborn</játékNeve>
+            <ár>20</ár>
+            <kiadásDátuma>2012-12-04</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>fantasy</műfaj>
+                <műfaj>kaland</műfaj>
+                <műfaj>RPG</műfaj>
+            </műfajok>
+        </játék>
+
+        <játék JID="EF" fejlesztő="UbiMtl" kiadó="Ubi">
+            <játékNeve>Eagle Flight</játékNeve>
+            <ár>20</ár>
+            <kiadásDátuma>2019-10-18</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>multiplayer</műfaj>
+            </műfajok>
+        </játék>
+
+        <játék JID="GoD" fejlesztő="BT34" kiadó="RG">
+            <játékNeve>Goat of Duty</játékNeve>
+            <ár>10</ár>
+            <kiadásDátuma>2019-07-10</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>FPS</műfaj>
+                <műfaj>multiplayer</műfaj>
+            </műfajok>
+        </játék>
+
+        <játék JID="GoW" fejlesztő="SMS" kiadó="PSS">
+            <játékNeve>God of War</játékNeve>
+            <ár>50</ár>
+            <kiadásDátuma>2018-04-20</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>fantasy</műfaj>
+                <műfaj>kaland</műfaj>
+                <műfaj>RPG</műfaj>
+            </műfajok>
+        </játék>
+
+        <játék JID="TESVHF" alapjáték="TESV" fejlesztő="BethGS" kiadó="BethSW">
+            <játékNeve>Hearthfire</játékNeve>
+            <ár>5</ár>
+            <kiadásDátuma>2012-09-04</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>fantasy</műfaj>
+                <műfaj>kaland</műfaj>
+                <műfaj>RPG</műfaj>
+            </műfajok>
+            <leárazás>
+                <százalék>5</százalék>
+                <kezdés>2023-11-25T00:00:00</kezdés>
+                <vége>2023-12-02T23:59:59</vége>
+            </leárazás>
+        </játék>
+
+        <játék JID="R6" fejlesztő="UbiMtl" kiadó="Ubi">
+            <játékNeve>Rainbow Six Siege</játékNeve>
+            <ár>20</ár>
+            <kiadásDátuma>2015-12-01</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>FPS</műfaj>
+                <műfaj>multiplayer</műfaj>
+            </műfajok>
+            <leárazás>
+                <százalék>25</százalék>
+                <kezdés>2023-12-01T09:00:00</kezdés>
+                <vége>2023-12-15T00:00:00</vége>
+            </leárazás>
+        </játék>
+
+        <játék JID="TESV" fejlesztő="BethGS" kiadó="BethSW">
+            <játékNeve>The Elder Scrolls V: Skyrim</játékNeve>
+            <ár>20</ár>
+            <kiadásDátuma>2011-11-11</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>fantasy</műfaj>
+                <műfaj>kaland</műfaj>
+                <műfaj>RPG</műfaj>
+            </műfajok>
+        </játék>
+
+        <játék JID="AC3TKW" alapjáték="AC3" fejlesztő="Ubi" kiadó="Ubi">
+            <játékNeve>The Tyranny of King Washington</játékNeve>
+            <ár>10</ár>
+            <kiadásDátuma>2013-03-19</kiadásDátuma>
+            <műfajok>
+                <műfaj>akció</műfaj>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>kaland</műfaj>
+            </műfajok>
+            <leárazás>
+                <százalék>15</százalék>
+                <kezdés>2023-12-05T10:00:00</kezdés>
+                <vége>2023-12-07T10:00:00</vége>
+            </leárazás>
+        </játék>
+
+        <játék JID="TVEC" fejlesztő="Astro" kiadó="Astro">
+            <játékNeve>The Vanishing of Ethan Carter</játékNeve>
+            <ár>20</ár>
+            <kiadásDátuma>2014-09-25</kiadásDátuma>
+            <műfajok>
+                <műfaj>singleplayer</műfaj>
+                <műfaj>horror</műfaj>
+                <műfaj>kaland</műfaj>
+                <műfaj>rejtély</műfaj>
+            </műfajok>
+            <leárazás>
+                <százalék>10</százalék>
+                <kezdés>2023-12-20T17:00:00</kezdés>
+                <vége>2024-01-05T05:00:00</vége>
+            </leárazás>
+        </játék>
+    </játékok>
+
+    <!-- Stúdiók -->
+    <stúdiók>
+        <stúdió SID="BT34">
+            <stúdióNeve>34BigThings srl</stúdióNeve>
+            <alapításÉve>2013</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="BethGS">
+            <stúdióNeve>Bethesda Game Studios</stúdióNeve>
+            <bemutatóSzöveg>Bethesda Game Studios bemutatkozó szövege...</bemutatóSzöveg>
+            <alapításÉve>2001</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="BethSW">
+            <stúdióNeve>Bethesda Softworks</stúdióNeve>
+            <bemutatóSzöveg>Bethesda Softworks bemutató szöveg valami</bemutatóSzöveg>
+            <alapításÉve>1986</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="PSS">
+            <stúdióNeve>Playstation Studios</stúdióNeve>
+            <alapításÉve>2005</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="RG">
+            <stúdióNeve>Raiser Games</stúdióNeve>
+            <alapításÉve>2016</alapításÉve>
+        </stúdió>
+        
+        <stúdió SID="SMS">
+            <stúdióNeve>Santa Monica Studios</stúdióNeve>
+            <bemutatóSzöveg>Santa Monica Studio bemutató szövege</bemutatóSzöveg>
+            <alapításÉve>1999</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="Astro">
+            <stúdióNeve>The Astronauts</stúdióNeve>
+            <alapításÉve>2012</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="Ubi">
+            <stúdióNeve>Ubisoft</stúdióNeve>
+            <bemutatóSzöveg>Ubisoft bemutató szöveg</bemutatóSzöveg>
+            <alapításÉve>1986</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="UbiMtl">
+            <stúdióNeve>Ubisoft Montreal</stúdióNeve>
+            <bemutatóSzöveg>Ubi Soft Montreal bemutató szöveg</bemutatóSzöveg>
+            <alapításÉve>1997</alapításÉve>
+        </stúdió>
+    </stúdiók>
+
+    <!-- Weboldalak -->
+    <weboldalak>
+        <weboldal WID="BT34Web" W_stúdió="BT34">
+            <főoldal>34bigthings.com</főoldal>
+            <Youtube>34BigThings_games</Youtube>
+            <Facebook>34bigthings</Facebook>
+        </weboldal>
+        
+        <!-- az egyik módosítás kedvéért kikommenteltem ezt a weboldalcsoportot-->
+        <!-- <weboldal WID="BethGSWeb" W_stúdió="BethGS">
+            <főoldal>bethesdagamestudios.com</főoldal>
+            <egyéb>twitter.com/bethesdastudios</egyéb>
+            <egyéb>discord.com/invite/bethesdastudios</egyéb>
+        </weboldal> -->
+
+        <weboldal WID="BethSWWeb" W_stúdió="BethSW">
+            <főoldal>bethesda.net</főoldal>
+            <Youtube>bethesda</Youtube>
+            <Facebook>bethesda.anz</Facebook>
+            <egyéb>twitter.com/bethesda</egyéb>
+        </weboldal>
+
+        <weboldal WID="PSSWeb" W_stúdió="PSS">
+            <főoldal>www.playstation.com</főoldal>
+            <Youtube>PlayStation</Youtube>
+            <Facebook>playstation</Facebook>
+        </weboldal>
+
+        <weboldal WID="RGWeb" W_stúdió="RG">
+            <főoldal>www.raisergames.com</főoldal>
+            <Youtube>RaiserGames</Youtube>
+            <Facebook>RaiserGamesPublisher</Facebook>
+            <egyéb>instagram.com/raisergames</egyéb>
+        </weboldal>
+
+        <weboldal WID="SMSWeb" W_stúdió="SMS">
+            <főoldal>sms.playstation.com</főoldal>
+            <Youtube>SantaMonicaStudio</Youtube>
+            <Facebook>santamonicastudio</Facebook>
+            <egyéb>twitter.com/sonysantamonica</egyéb>
+            <egyéb>instagram.com/santamonicastudio</egyéb>
+        </weboldal>
+
+        <weboldal WID="AstroWeb" W_stúdió="Astro">
+            <főoldal>www.theastronauts.com</főoldal>
+            <Youtube>TheAstronauts</Youtube>
+            <Facebook>TheAstroCrew</Facebook>
+        </weboldal>
+
+        <weboldal WID="UbiWeb" W_stúdió="Ubi">
+            <főoldal>www.ubisoft.com</főoldal>
+            <Youtube>Ubisoft</Youtube>
+            <Facebook>ubisoft</Facebook>
+            <egyéb>reddit.com/r/ubisoft</egyéb>
+            <egyéb>instagram.com/ubisoft</egyéb>
+            <egyéb>twitter.com/ubisoft</egyéb>
+        </weboldal>
+
+        <weboldal WID="UbiMtlWeb" W_stúdió="UbiMtl">
+            <főoldal>montreal.ubisoft.com</főoldal>
+            <Youtube>UbisoftMtl</Youtube>
+            <Facebook>UbisoftMontreal</Facebook>
+        </weboldal>
+    </weboldalak>
+
+    <!-- Teljesítmények -->
+    <teljesítmények>
+        <teljesítmény TID="ACH1">
+            <teljesítményNeve>Gyűjtemény</teljesítményNeve>
+            <teljesítményLeírása>Szerezz meg 10 játékot.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2010-05-25</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH2" T_játék="TESV">
+            <teljesítményNeve>Legendás</teljesítményNeve>
+            <teljesítményLeírása>Érj el 100-as szintet valamely képességeddel.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2011-11-11</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH3" T_játék="TESV">
+            <teljesítményNeve>Thu'um mester</teljesítményNeve>
+            <teljesítményLeírása>Tanulj meg 20 kiáltást.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2011-11-11</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH4" T_játék="TESVHF">
+            <teljesítményNeve>Polgár</teljesítményNeve>
+            <teljesítményLeírása>Vásárolj egy házat.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2012-09-04</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH5" T_játék="TVEC">
+            <teljesítményNeve>Befejezetlen történet</teljesítményNeve>
+            <teljesítményLeírása>Érj a rejtély végére.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2014-09-25</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH6" T_játék="TESVDB">
+            <teljesítményNeve>Miraak Temploma</teljesítményNeve>
+            <teljesítményHozzáadásánakDátuma>2014-12-01</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH7" T_játék="AC3TKW">
+            <teljesítményNeve>Abszolút hatalom</teljesítményNeve>
+            <teljesítményLeírása>Fejezd be a fő történetszálat.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2015-10-10</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH8" T_játék="EF">
+            <teljesítményNeve>Dögevő</teljesítményNeve>
+            <teljesítményLeírása>Pusztíts el 100 keselyűt.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2017-05-05</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH9" T_játék="EF">
+            <teljesítményNeve>Madárijesztő</teljesítményNeve>
+            <teljesítményLeírása>Teljesítsd a Bazilika fejezetet.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2017-05-05</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH10" T_játék="GoW">
+            <teljesítményNeve>Befejezetlen ügy</teljesítményNeve>
+            <teljesítményLeírása>Segíts mindegyik kóborló szellemnek.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2018-04-20</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH11" T_játék="GoW">
+            <teljesítményNeve>Mint otthon</teljesítményNeve>
+            <teljesítményHozzáadásánakDátuma>2048-04-20</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+
+        <teljesítmény TID="ACH12" T_játék="GoD">
+            <teljesítményNeve>Cuki és halálos</teljesítményNeve>
+            <teljesítményLeírása>Ölj meg 10 ellenfelet anélkül, hogy meghalj.</teljesítményLeírása>
+            <teljesítményHozzáadásánakDátuma>2019-08-10</teljesítményHozzáadásánakDátuma>
+        </teljesítmény>
+    </teljesítmények>
+
+    <!-- Nyelvek -->
+    <nyelvek>
+        <nyelv NyID="EN">angol</nyelv>
+        <nyelv NyID="DE">német</nyelv>
+        <nyelv NyID="IT">olasz</nyelv>
+        <nyelv NyID="RU">orosz</nyelv>
+        <nyelv NyID="JP">japán</nyelv>
+        <nyelv NyID="HU">magyar</nyelv>
+        <nyelv NyID="TR">török</nyelv>
+    </nyelvek>
+
+    <!-- Játékok támogatott nyelvei -->
+    <támogatottNyelvek>
+        <!-- Assassin's Creed 3 nyelvei-->
+        <támogatottNyelv TNY_játék="AC3" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="AC3" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="AC3" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="AC3" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="AC3" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- Dragonborn nyelvei -->
+        <támogatottNyelv TNY_játék="TESVDB" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVDB" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVDB" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVDB" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVDB" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- Eagle Flight nyelvei -->
+        <támogatottNyelv TNY_játék="EF" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="EF" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="EF" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="EF" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="EF" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- Goat of Duty nyelvei -->
+        <támogatottNyelv TNY_játék="GoD" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoD" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoD" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoD" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>nem</hang>    
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoD" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoD" TNY_nyelv="TR">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+
+        <!-- God of War nyelvei -->
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="HU">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="GoW" TNY_nyelv="TR">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- Hearthfire nyelvei -->
+        <támogatottNyelv TNY_játék="TESVHF" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVHF" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVHF" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVHF" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESVHF" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- Rainbow Six Siege nyelvei -->
+        <támogatottNyelv TNY_játék="R6" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="R6" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="R6" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="R6" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="R6" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- The Elder Scrolls V: Skytim nyelvei -->
+        <támogatottNyelv TNY_játék="TESV" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESV" TNY_nyelv="JP">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESV" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESV" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TESV" TNY_nyelv="RU">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- The Tyranny of King Washington nyelvei -->
+        <támogatottNyelv TNY_játék="AC3TKW" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+
+        <!-- The Vanishing of Ethan Carter nyelvei -->
+        <támogatottNyelv TNY_játék="TVEC" TNY_nyelv="EN">
+            <felirat>igen</felirat>
+            <hang>igen</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TVEC" TNY_nyelv="DE">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+        <támogatottNyelv TNY_játék="TVEC" TNY_nyelv="IT">
+            <felirat>igen</felirat>
+            <hang>nem</hang>
+        </támogatottNyelv>
+    </támogatottNyelvek>
+
+    <!-- Felhasználók -->
+    <felhasználók>
+        <felhasználó FID="F1">
+            <felhasználónév>toothed2010</felhasználónév>
+            <fiókLétrehozásánakDátuma>2010-06-11</fiókLétrehozásánakDátuma>
+            <születésiDátum>1982-12-30</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F2">
+            <felhasználónév>JustAGoat</felhasználónév>
+            <megjelenítettNév>Just a goat</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2014-12-01</fiókLétrehozásánakDátuma>
+            <születésiDátum>1995-06-06</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F3">
+            <felhasználónév>sw6767</felhasználónév>
+            <megjelenítettNév>Look, Im not your father!</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2015-07-01</fiókLétrehozásánakDátuma>
+            <születésiDátum>1999-11-08</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F4">
+            <felhasználónév>eskell_esq</felhasználónév>
+            <megjelenítettNév>SELECT nothing FROM nowhere</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2016-03-05</fiókLétrehozásánakDátuma>
+            <születésiDátum>2001-01-01</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F5">
+            <felhasználónév>snowwingedhunter123</felhasználónév>
+            <megjelenítettNév>Snow-winged hunter</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2017-01-15</fiókLétrehozásánakDátuma>
+            <születésiDátum>2002-10-04</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F6">
+            <felhasználónév>smeow3437</felhasználónév>
+            <fiókLétrehozásánakDátuma>2017-09-03</fiókLétrehozásánakDátuma>
+            <születésiDátum>2002-07-08</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F7">
+            <felhasználónév>Dand3lion</felhasználónév>
+            <megjelenítettNév>Jaskier the bard</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2019-10-20</fiókLétrehozásánakDátuma>
+            <születésiDátum>2000-09-23</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F8">
+            <felhasználónév>LBlackWood55</felhasználónév>
+            <fiókLétrehozásánakDátuma>2020-01-01</fiókLétrehozásánakDátuma>
+            <születésiDátum>2006-12-01</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F9">
+            <felhasználónév>bbBbeo</felhasználónév>
+            <megjelenítettNév>Beo</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2020-01-25</fiókLétrehozásánakDátuma>
+            <születésiDátum>2004-11-19</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F10">
+            <felhasználónév>eleMentalSnake</felhasználónév>
+            <megjelenítettNév>Mad Hatter</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2021-02-02</fiókLétrehozásánakDátuma>
+            <születésiDátum>2003-05-25</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F11">
+            <felhasználónév>hooty3</felhasználónév>
+            <megjelenítettNév>Hootsifer</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2022-08-31</fiókLétrehozásánakDátuma>
+            <születésiDátum>2000-05-18</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F12">
+            <felhasználónév>wWeki9ii</felhasználónév>
+            <megjelenítettNév>a-Woo</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2022-09-30</fiókLétrehozásánakDátuma>
+            <születésiDátum>2007-09-15</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F13">
+            <felhasználónév>corgiii89</felhasználónév>
+            <fiókLétrehozásánakDátuma>2022-11-05</fiókLétrehozásánakDátuma>
+            <születésiDátum>1989-03-10</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F14">
+            <felhasználónév>julienmoveit</felhasználónév>
+            <fiókLétrehozásánakDátuma>2023-12-01</fiókLétrehozásánakDátuma>
+            <születésiDátum>2007-02-16</születésiDátum>
+        </felhasználó>
+
+        <felhasználó FID="F15">
+            <felhasználónév>bzrk781</felhasználónév>
+            <megjelenítettNév>berZerk</megjelenítettNév>
+            <fiókLétrehozásánakDátuma>2023-12-01</fiókLétrehozásánakDátuma>
+            <születésiDátum>2008-04-27</születésiDátum>
+        </felhasználó>
+    </felhasználók>
+
+    <!-- Barátok -->
+    <barátok>
+        <barát felhasználó1="F2" felhasználó2="F7" />
+        <barát felhasználó1="F2" felhasználó2="F13" />
+        <barát felhasználó1="F8" felhasználó2="F11" />
+        <barát felhasználó1="F8" felhasználó2="F1" />
+        <barát felhasználó1="F9" felhasználó2="F7" />
+        <barát felhasználó1="F9" felhasználó2="F10" />
+        <barát felhasználó1="F9" felhasználó2="F6" />
+        <barát felhasználó1="F13" felhasználó2="F9" />
+        <barát felhasználó1="F10" felhasználó2="F13" />
+        <barát felhasználó1="F4" felhasználó2="F7" />
+        <barát felhasználó1="F4" felhasználó2="F10" />
+        <barát felhasználó1="F4" felhasználó2="F3" />
+        <barát felhasználó1="F4" felhasználó2="F1" />
+        <barát felhasználó1="F11" felhasználó2="F7" />
+        <barát felhasználó1="F11" felhasználó2="F2" />
+        <barát felhasználó1="F11" felhasználó2="F9" />
+        <barát felhasználó1="F11" felhasználó2="F13" />
+        <barát felhasználó1="F11" felhasználó2="F10" />
+        <barát felhasználó1="F11" felhasználó2="F4" />
+        <barát felhasználó1="F11" felhasználó2="F5" />
+        <barát felhasználó1="F11" felhasználó2="F3" />
+        <barát felhasználó1="F11" felhasználó2="F1" />
+        <barát felhasználó1="F6" felhasználó2="F7" />
+        <barát felhasználó1="F6" felhasználó2="F8" />
+        <barát felhasználó1="F6" felhasználó2="F13" />
+        <barát felhasználó1="F6" felhasználó2="F4" />
+        <barát felhasználó1="F6" felhasználó2="F11" />
+        <barát felhasználó1="F6" felhasználó2="F3" />
+        <barát felhasználó1="F6" felhasználó2="F1" />
+        <barát felhasználó1="F6" felhasználó2="F12" />
+        <barát felhasználó1="F5" felhasználó2="F6" />
+        <barát felhasználó1="F12" felhasználó2="F7" />
+        <barát felhasználó1="F12" felhasználó2="F8" />
+        <barát felhasználó1="F12" felhasználó2="F9" />
+        <barát felhasználó1="F12" felhasználó2="F4" />
+        <barát felhasználó1="F12" felhasználó2="F11" />
+        <barát felhasználó1="F12" felhasználó2="F1" />
+    </barátok>
+
+    <!-- Felhasználók által kívánságlistába vagy kosárba hozzáadott, vagy megvett játékok-->
+    <hozzáadottJátékok>
+        <!-- Dand3lion felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="AC3" HJ_felhasználó="F7">
+            <játékHozzáadásánakDátuma>2021-10-29</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="R6" HJ_felhasználó="F7">
+            <játékHozzáadásánakDátuma>2023-12-01</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>0</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="AC3TKW" HJ_felhasználó="F7">
+            <játékHozzáadásánakDátuma>2021-11-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+
+        <!-- JustAGoat felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="AC3" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2014-12-25</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>23</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVDB" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2017-09-16</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>5</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="GoD" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2018-04-12</játékHozzáadásánakDátuma>
+            <állapot>kosárban</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="GoW" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2018-04-01</játékHozzáadásánakDátuma>
+            <állapot>kosárban</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2017-09-16</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>11</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2017-08-16</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>57</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="AC3TKW" HJ_felhasználó="F2">
+            <játékHozzáadásánakDátuma>2014-12-25</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>8</játszásIdőtartama>
+        </hozzáadottJáték>
+
+        <!-- LBlackWood55 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="AC3" HJ_felhasználó="F8">
+            <játékHozzáadásánakDátuma>2020-01-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="EF" HJ_felhasználó="F8">
+            <játékHozzáadásánakDátuma>2020-01-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F8">
+            <játékHozzáadásánakDátuma>2021-05-24</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="AC3TKW" HJ_felhasználó="F8">
+            <játékHozzáadásánakDátuma>2020-01-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+
+        <!-- bbBbeo felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="TESVDB" HJ_felhasználó="F9">
+            <játékHozzáadásánakDátuma>2021-06-02</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F9">
+            <játékHozzáadásánakDátuma>2021-06-02</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F9">
+            <játékHozzáadásánakDátuma>2021-05-13</játékHozzáadásánakDátuma>
+            <állapot>kosárban</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TVEC" HJ_felhasználó="F9">
+            <játékHozzáadásánakDátuma>2020-01-27</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+
+        <!-- corgiii89 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="EF" HJ_felhasználó="F13">
+            <játékHozzáadásánakDátuma>2022-11-05</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>6</játszásIdőtartama>
+        </hozzáadottJáték>
+
+        <!-- eleMentalSnake felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="TESVDB" HJ_felhasználó="F10">
+            <játékHozzáadásánakDátuma>2023-12-01</játékHozzáadásánakDátuma>
+            <állapot>kosárban</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="EF" HJ_felhasználó="F10">
+            <játékHozzáadásánakDátuma>2021-02-28</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>109</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F10">
+            <játékHozzáadásánakDátuma>2023-12-01</játékHozzáadásánakDátuma>
+            <állapot>kosárban</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="R6" HJ_felhasználó="F10">
+            <játékHozzáadásánakDátuma>2021-02-02</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>17</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F10">
+            <játékHozzáadásánakDátuma>2022-10-30</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>31</játszásIdőtartama>
+        </hozzáadottJáték>
+
+        <!-- eskell_esq felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="GoD" HJ_felhasználó="F4">
+            <játékHozzáadásánakDátuma>2019-10-09</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>5</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="GoW" HJ_felhasználó="F4">
+            <játékHozzáadásánakDátuma>2022-02-04</játékHozzáadásánakDátuma>
+            <állapot>kosárban</állapot>
+        </hozzáadottJáték>
+
+        <!-- hooty3 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="AC3" HJ_felhasználó="F11">
+            <játékHozzáadásánakDátuma>2022-10-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F11">
+            <játékHozzáadásánakDátuma>2022-10-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+
+        <!-- smeow3437 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="TESVDB" HJ_felhasználó="F6">
+            <játékHozzáadásánakDátuma>2021-07-18</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>10</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="EF" HJ_felhasználó="F6">
+            <játékHozzáadásánakDátuma>2021-12-14</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>51</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F6">
+            <játékHozzáadásánakDátuma>2019-02-12</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>37</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F6">
+            <játékHozzáadásánakDátuma>2018-11-29</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>256</játszásIdőtartama>
+        </hozzáadottJáték>
+
+        <!-- snowwingedhunter123 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="AC3" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2018-05-28</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>103</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVDB" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2021-11-11</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>9</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="EF" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2018-10-26</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="GoD" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2017-09-09</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>13</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="GoW" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2022-10-29</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>36</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2021-11-11</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>31</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2021-11-11</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>174</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="AC3TKW" HJ_felhasználó="F5">
+            <játékHozzáadásánakDátuma>2018-05-28</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>25</játszásIdőtartama>
+        </hozzáadottJáték>
+
+        <!-- sw6767 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="GoW" HJ_felhasználó="F3">
+            <játékHozzáadásánakDátuma>2022-10-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="R6" HJ_felhasználó="F3">
+            <játékHozzáadásánakDátuma>2022-10-22</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+
+        <!-- toothed2010 felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="GoW" HJ_felhasználó="F1">
+            <játékHozzáadásánakDátuma>2018-05-20</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>77</játszásIdőtartama>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESVHF" HJ_felhasználó="F1">
+            <játékHozzáadásánakDátuma>2018-05-23</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="R6" HJ_felhasználó="F1">
+            <játékHozzáadásánakDátuma>2010-06-11</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TESV" HJ_felhasználó="F1">
+            <játékHozzáadásánakDátuma>2010-06-19</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+
+        <!-- wWeki9ii felhasználó játékai -->
+        <hozzáadottJáték HJ_játék="R6" HJ_felhasználó="F12">
+            <játékHozzáadásánakDátuma>2023-12-01</játékHozzáadásánakDátuma>
+            <állapot>kívánságlistán</állapot>
+        </hozzáadottJáték>
+        <hozzáadottJáték HJ_játék="TVEC" HJ_felhasználó="F12">
+            <játékHozzáadásánakDátuma>2022-09-30</játékHozzáadásánakDátuma>
+            <állapot>megvéve</állapot>
+            <játszásIdőtartama>17</játszásIdőtartama>
+        </hozzáadottJáték>
+    </hozzáadottJátékok>
+
+    <!-- Felhasználók által elért teljesítmények -->
+    <elértTeljesítmények>
+        <!-- JustAGoat felhasználó által elért teljesítmények -->
+        <elértTeljesítmény teljesítő="F2" teljesítettTeljesítmény="ACH7">
+            <teljesítményElérésénekDátuma>2015-02-26</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F2" teljesítettTeljesítmény="ACH6">
+            <teljesítményElérésénekDátuma>2017-09-24</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F2" teljesítettTeljesítmény="ACH3">
+            <teljesítményElérésénekDátuma>2017-12-11</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F2" teljesítettTeljesítmény="ACH4">
+            <teljesítményElérésénekDátuma>2018-01-09</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+
+        <!-- eleMentalSnake felhasználó által elért teljesítmények -->
+        <elértTeljesítmény teljesítő="F10" teljesítettTeljesítmény="ACH9">
+            <teljesítményElérésénekDátuma>2021-03-03</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F10" teljesítettTeljesítmény="ACH8">
+            <teljesítményElérésénekDátuma>2021-05-12</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+
+        <!-- smeow3437 felhasználó által elért teljesítmények -->
+        <elértTeljesítmény teljesítő="F6" teljesítettTeljesítmény="ACH2">
+            <teljesítményElérésénekDátuma>2018-01-15</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F6" teljesítettTeljesítmény="ACH3">
+            <teljesítményElérésénekDátuma>2018-11-30</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F6" teljesítettTeljesítmény="ACH6">
+            <teljesítményElérésénekDátuma>2019-05-22</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F6" teljesítettTeljesítmény="ACH9">
+            <teljesítményElérésénekDátuma>2022-01-06</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+
+        <!-- snowwingedhunter123 felhasználó által elért teljesítések -->
+        <elértTeljesítmény teljesítő="F5" teljesítettTeljesítmény="ACH5">
+            <teljesítményElérésénekDátuma>2018-06-10</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F5" teljesítettTeljesítmény="ACH3">
+            <teljesítményElérésénekDátuma>2021-11-15</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F5" teljesítettTeljesítmény="ACH2">
+            <teljesítményElérésénekDátuma>2021-12-02</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F5" teljesítettTeljesítmény="ACH4">
+            <teljesítményElérésénekDátuma>2021-12-11</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F5" teljesítettTeljesítmény="ACH6">
+            <teljesítményElérésénekDátuma>2022-04-13</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F5" teljesítettTeljesítmény="ACH11">
+            <teljesítményElérésénekDátuma>2022-11-07</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+
+        <!-- toothed2010 felhasználó által elért teljesítmények -->
+        <elértTeljesítmény teljesítő="F1" teljesítettTeljesítmény="ACH11">
+            <teljesítményElérésénekDátuma>2018-05-24</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+        <elértTeljesítmény teljesítő="F1" teljesítettTeljesítmény="ACH10">
+            <teljesítményElérésénekDátuma>2018-05-31</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+
+        <!-- wWeki9ii felhasználó által elért teljesítmények -->
+        <elértTeljesítmény teljesítő="F12" teljesítettTeljesítmény="ACH5">
+            <teljesítményElérésénekDátuma>2022-10-03</teljesítményElérésénekDátuma>
+        </elértTeljesítmény>
+    </elértTeljesítmények>
+
+</XMLTaskULA7Z2>
