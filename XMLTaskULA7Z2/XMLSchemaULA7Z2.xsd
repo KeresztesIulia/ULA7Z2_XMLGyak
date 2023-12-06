@@ -329,9 +329,9 @@
 <!-- Gyökérelem -->
 <xs:complexType name="XMLTASKULA7Z2Típus">
     <xs:sequence>
-        <xs:element ref="játékok" />
         <xs:element ref="stúdiók" />
         <xs:element ref="weboldalak" minOccurs="0" />
+        <xs:element ref="játékok" />
         <xs:element ref="teljesítmények" minOccurs="0" />
         <xs:element ref="nyelvek" minOccurs="0" />
         <xs:element ref="támogatottNyelvek" minOccurs="0" />

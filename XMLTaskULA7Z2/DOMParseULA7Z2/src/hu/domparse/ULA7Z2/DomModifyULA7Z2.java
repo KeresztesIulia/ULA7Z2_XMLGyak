@@ -139,7 +139,7 @@ public class DomModifyULA7Z2 {
             websiteType = "egyéb";
         }
         
-        // megadott azonosítójú felhasználó megtalálása
+        // megadott azonosítójú weboldalcsoport megtalálása
         NodeList websiteGroups = dom.getElementsByTagName("weboldal");
         Element SIDwebsiteGroup = null;
         Node website = null;
@@ -173,8 +173,8 @@ public class DomModifyULA7Z2 {
             Node websites = dom.getElementsByTagName("weboldalak").item(0);
             if (websites == null){
                 websites = dom.createElement("weboldalak");
-                Node studioList = dom.getElementsByTagName("stúdiók").item(0);
-                dom.insertBefore(websites, studioList.getNextSibling());
+                Node gamesList = dom.getElementsByTagName("játékok").item(0);
+                dom.insertBefore(websites, gamesList);
             }
             websites.appendChild(websiteGroup);
         }
@@ -276,14 +276,11 @@ public class DomModifyULA7Z2 {
             achievementList = dom.createElement("teljesítmények");
             achievementList.appendChild(newAchievement);
             
-            // a "teljesítmények" csomópontnak a "weboldalak" csomópont után kell jönnie, de nem biztos, hogy az létezik
-            // azonban helyes dokumentumot feltételezünk, ami azt jelenti, hogy "stúdiók" csomópontnak viszont kötelezően léteznie
-            // kell, mire teljesítményeket kezdünk hozzáadni
-            Node insertAfterNode = dom.getElementsByTagName("weboldalak").item(0);
-            if (insertAfterNode == null) insertAfterNode = dom.getElementsByTagName("stúdiók").item(0);
+            // a "teljesítmények" csomópontnak a "játékok" csomópont után kell jönnie
+            // helyes dokumentumfelépítést feltételezve ennek már kötelezően léteznie kell, mielőtt a teljesítményeket létrehozzuk
+            Node insertAfterNode = dom.getElementsByTagName("játékok").item(0);
             dom.insertBefore(achievementList, insertAfterNode.getNextSibling());
         }
-
         achievementList.appendChild(newAchievement);
     }
 
@@ -317,7 +314,7 @@ public class DomModifyULA7Z2 {
     }
 
     // ötödik módosítás: lejárt leárazások törlése
-    private static void RemoveEndedSales(Document dom){
+    public static void RemoveEndedSales(Document dom){
         NodeList salesEndDates = dom.getElementsByTagName("vége");
         for (int i = 0; i < salesEndDates.getLength(); i++){
             Node saleEndDate = salesEndDates.item(i);
@@ -329,7 +326,7 @@ public class DomModifyULA7Z2 {
         }
     }
 
-    // harodik módosítás: leárazás hozzáadása játékhoz vagy létező módosítása
+    // hatodik módosítás: leárazás hozzáadása játékhoz vagy létező módosítása
     private static void AddOrChangeSale(Document dom, String JID, int percent, String startTime, String endTime) {
         // adatok helyességének ellenőrzése
         if (percent < 0 || percent > 100){

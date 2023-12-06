@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <XMLTaskULA7Z2>
+    <!-- Stúdiók -->
+    <stúdiók>
+        <stúdió SID="BT34">
+            <stúdióNeve>34BigThings srl</stúdióNeve>
+            <alapításÉve>2013</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="BethGS">
+            <stúdióNeve>Bethesda Game Studios</stúdióNeve>
+            <bemutatóSzöveg>Bethesda Game Studios bemutatkozó szövege...</bemutatóSzöveg>
+            <alapításÉve>2001</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="BethSW">
+            <stúdióNeve>Bethesda Softworks</stúdióNeve>
+            <bemutatóSzöveg>Bethesda Softworks bemutató szöveg valami</bemutatóSzöveg>
+            <alapításÉve>1986</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="PSS">
+            <stúdióNeve>Playstation Studios</stúdióNeve>
+            <alapításÉve>2005</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="RG">
+            <stúdióNeve>Raiser Games</stúdióNeve>
+            <alapításÉve>2016</alapításÉve>
+        </stúdió>
+        
+        <stúdió SID="SMS">
+            <stúdióNeve>Santa Monica Studios</stúdióNeve>
+            <bemutatóSzöveg>Santa Monica Studio bemutató szövege</bemutatóSzöveg>
+            <alapításÉve>1999</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="Astro">
+            <stúdióNeve>The Astronauts</stúdióNeve>
+            <alapításÉve>2012</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="Ubi">
+            <stúdióNeve>Ubisoft</stúdióNeve>
+            <bemutatóSzöveg>Ubisoft bemutató szöveg</bemutatóSzöveg>
+            <alapításÉve>1986</alapításÉve>
+        </stúdió>
+
+        <stúdió SID="UbiMtl">
+            <stúdióNeve>Ubisoft Montreal</stúdióNeve>
+            <bemutatóSzöveg>Ubi Soft Montreal bemutató szöveg</bemutatóSzöveg>
+            <alapításÉve>1997</alapításÉve>
+        </stúdió>
+    </stúdiók>
+
+    <!-- Weboldalak -->
+    <weboldalak>
+        <weboldal WID="BT34Web" W_stúdió="BT34">
+            <főoldal>34bigthings.com</főoldal>
+            <Youtube>34BigThings_games</Youtube>
+            <Facebook>34bigthings</Facebook>
+        </weboldal>
+        
+        <weboldal WID="BethGSWeb" W_stúdió="BethGS">
+            <főoldal>bethesdagamestudios.com</főoldal>
+            <egyéb>twitter.com/bethesdastudios</egyéb>
+            <egyéb>discord.com/invite/bethesdastudios</egyéb>
+        </weboldal>
+
+        <weboldal WID="BethSWWeb" W_stúdió="BethSW">
+            <főoldal>bethesda.net</főoldal>
+            <Youtube>bethesda</Youtube>
+            <Facebook>bethesda.anz</Facebook>
+            <egyéb>twitter.com/bethesda</egyéb>
+        </weboldal>
+
+        <weboldal WID="PSSWeb" W_stúdió="PSS">
+            <főoldal>www.playstation.com</főoldal>
+            <Youtube>PlayStation</Youtube>
+            <Facebook>playstation</Facebook>
+        </weboldal>
+
+        <weboldal WID="RGWeb" W_stúdió="RG">
+            <főoldal>www.raisergames.com</főoldal>
+            <Youtube>RaiserGames</Youtube>
+            <Facebook>RaiserGamesPublisher</Facebook>
+            <egyéb>instagram.com/raisergames</egyéb>
+        </weboldal>
+
+        <weboldal WID="SMSWeb" W_stúdió="SMS">
+            <főoldal>sms.playstation.com</főoldal>
+            <Youtube>SantaMonicaStudio</Youtube>
+            <Facebook>santamonicastudio</Facebook>
+            <egyéb>twitter.com/sonysantamonica</egyéb>
+            <egyéb>instagram.com/santamonicastudio</egyéb>
+        </weboldal>
+
+        <weboldal WID="AstroWeb" W_stúdió="Astro">
+            <főoldal>www.theastronauts.com</főoldal>
+            <Youtube>TheAstronauts</Youtube>
+            <Facebook>TheAstroCrew</Facebook>
+        </weboldal>
+
+        <weboldal WID="UbiWeb" W_stúdió="Ubi">
+            <főoldal>www.ubisoft.com</főoldal>
+            <Youtube>Ubisoft</Youtube>
+            <Facebook>ubisoft</Facebook>
+            <egyéb>reddit.com/r/ubisoft</egyéb>
+            <egyéb>instagram.com/ubisoft</egyéb>
+            <egyéb>twitter.com/ubisoft</egyéb>
+        </weboldal>
+
+        <weboldal WID="UbiMtlWeb" W_stúdió="UbiMtl">
+            <főoldal>montreal.ubisoft.com</főoldal>
+            <Youtube>UbisoftMtl</Youtube>
+            <Facebook>UbisoftMontreal</Facebook>
+        </weboldal>
+    </weboldalak>
+
     <!-- Játékok -->
     <játékok>
         <játék JID="AC3" fejlesztő="Ubi" kiadó="Ubi">
@@ -75,7 +192,7 @@
             <leárazás>
                 <százalék>5</százalék>
                 <kezdés>2023-11-25T00:00:00</kezdés>
-                <vége>2023-12-02T23:59:59</vége>
+                <vége>2023-12-06T23:59:59</vége>
             </leárazás>
         </játék>
 
@@ -141,124 +258,6 @@
             </leárazás>
         </játék>
     </játékok>
-
-    <!-- Stúdiók -->
-    <stúdiók>
-        <stúdió SID="BT34">
-            <stúdióNeve>34BigThings srl</stúdióNeve>
-            <alapításÉve>2013</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="BethGS">
-            <stúdióNeve>Bethesda Game Studios</stúdióNeve>
-            <bemutatóSzöveg>Bethesda Game Studios bemutatkozó szövege...</bemutatóSzöveg>
-            <alapításÉve>2001</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="BethSW">
-            <stúdióNeve>Bethesda Softworks</stúdióNeve>
-            <bemutatóSzöveg>Bethesda Softworks bemutató szöveg valami</bemutatóSzöveg>
-            <alapításÉve>1986</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="PSS">
-            <stúdióNeve>Playstation Studios</stúdióNeve>
-            <alapításÉve>2005</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="RG">
-            <stúdióNeve>Raiser Games</stúdióNeve>
-            <alapításÉve>2016</alapításÉve>
-        </stúdió>
-        
-        <stúdió SID="SMS">
-            <stúdióNeve>Santa Monica Studios</stúdióNeve>
-            <bemutatóSzöveg>Santa Monica Studio bemutató szövege</bemutatóSzöveg>
-            <alapításÉve>1999</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="Astro">
-            <stúdióNeve>The Astronauts</stúdióNeve>
-            <alapításÉve>2012</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="Ubi">
-            <stúdióNeve>Ubisoft</stúdióNeve>
-            <bemutatóSzöveg>Ubisoft bemutató szöveg</bemutatóSzöveg>
-            <alapításÉve>1986</alapításÉve>
-        </stúdió>
-
-        <stúdió SID="UbiMtl">
-            <stúdióNeve>Ubisoft Montreal</stúdióNeve>
-            <bemutatóSzöveg>Ubi Soft Montreal bemutató szöveg</bemutatóSzöveg>
-            <alapításÉve>1997</alapításÉve>
-        </stúdió>
-    </stúdiók>
-
-    <!-- Weboldalak -->
-    <weboldalak>
-        <weboldal WID="BT34Web" W_stúdió="BT34">
-            <főoldal>34bigthings.com</főoldal>
-            <Youtube>34BigThings_games</Youtube>
-            <Facebook>34bigthings</Facebook>
-        </weboldal>
-        
-        <!-- az egyik módosítás kedvéért kikommenteltem ezt a weboldalcsoportot-->
-        <!-- <weboldal WID="BethGSWeb" W_stúdió="BethGS">
-            <főoldal>bethesdagamestudios.com</főoldal>
-            <egyéb>twitter.com/bethesdastudios</egyéb>
-            <egyéb>discord.com/invite/bethesdastudios</egyéb>
-        </weboldal> -->
-
-        <weboldal WID="BethSWWeb" W_stúdió="BethSW">
-            <főoldal>bethesda.net</főoldal>
-            <Youtube>bethesda</Youtube>
-            <Facebook>bethesda.anz</Facebook>
-            <egyéb>twitter.com/bethesda</egyéb>
-        </weboldal>
-
-        <weboldal WID="PSSWeb" W_stúdió="PSS">
-            <főoldal>www.playstation.com</főoldal>
-            <Youtube>PlayStation</Youtube>
-            <Facebook>playstation</Facebook>
-        </weboldal>
-
-        <weboldal WID="RGWeb" W_stúdió="RG">
-            <főoldal>www.raisergames.com</főoldal>
-            <Youtube>RaiserGames</Youtube>
-            <Facebook>RaiserGamesPublisher</Facebook>
-            <egyéb>instagram.com/raisergames</egyéb>
-        </weboldal>
-
-        <weboldal WID="SMSWeb" W_stúdió="SMS">
-            <főoldal>sms.playstation.com</főoldal>
-            <Youtube>SantaMonicaStudio</Youtube>
-            <Facebook>santamonicastudio</Facebook>
-            <egyéb>twitter.com/sonysantamonica</egyéb>
-            <egyéb>instagram.com/santamonicastudio</egyéb>
-        </weboldal>
-
-        <weboldal WID="AstroWeb" W_stúdió="Astro">
-            <főoldal>www.theastronauts.com</főoldal>
-            <Youtube>TheAstronauts</Youtube>
-            <Facebook>TheAstroCrew</Facebook>
-        </weboldal>
-
-        <weboldal WID="UbiWeb" W_stúdió="Ubi">
-            <főoldal>www.ubisoft.com</főoldal>
-            <Youtube>Ubisoft</Youtube>
-            <Facebook>ubisoft</Facebook>
-            <egyéb>reddit.com/r/ubisoft</egyéb>
-            <egyéb>instagram.com/ubisoft</egyéb>
-            <egyéb>twitter.com/ubisoft</egyéb>
-        </weboldal>
-
-        <weboldal WID="UbiMtlWeb" W_stúdió="UbiMtl">
-            <főoldal>montreal.ubisoft.com</főoldal>
-            <Youtube>UbisoftMtl</Youtube>
-            <Facebook>UbisoftMontreal</Facebook>
-        </weboldal>
-    </weboldalak>
 
     <!-- Teljesítmények -->
     <teljesítmények>
@@ -696,6 +695,7 @@
         <barát felhasználó1="F12" felhasználó2="F9" />
         <barát felhasználó1="F12" felhasználó2="F4" />
         <barát felhasználó1="F12" felhasználó2="F11" />
+        <barát felhasználó1="F12" felhasználó2="F7" />
         <barát felhasználó1="F12" felhasználó2="F1" />
     </barátok>
 

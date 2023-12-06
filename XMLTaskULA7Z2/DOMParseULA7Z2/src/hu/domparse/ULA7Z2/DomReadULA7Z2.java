@@ -55,8 +55,17 @@ public class DomReadULA7Z2 {
             else {
                 // ha már nincs gyerekeleme, csak szöveges tartalma, az kiíratásra kerül
                 if (!isRandomNode(child)){
-                    System.out.print(child.getNodeValue());
-                    textOnly = true;
+                    if (child.hasAttributes()){
+                        System.out.println();
+                        indent(indentAmount + 1);
+                        System.out.print("<" + child.getNodeName());
+                        printAttributes(child);
+                        System.out.print(" />");
+                    }
+                    else{
+                        System.out.print(child.getNodeValue());
+                        textOnly = true;
+                    }
                 }
             }
         }
@@ -94,14 +103,15 @@ public class DomReadULA7Z2 {
         }
     }
 
-    // ez az ellenőrzés arra szolgál, hogy csak szöveges tartalmat írjon ki,
-    // amikor azt szeretnénk, és ne írjon ki felesleges üres sorokat
+    // csak szöveges vagy üres csomópontokat irasson ki
+    // ez a fölösleges üres sorok elkerülésének érdekében van
     private static boolean isRandomNode(Node node){
+        if (node.hasAttributes()) return false;
         if (node.getNodeType() != Node.TEXT_NODE){
             return true;
         }
         String value = node.getNodeValue();
-        if (value.trim().isEmpty() || value == "#text" || value == null){
+        if (value == null || value.trim().isEmpty() || value == "#text"){
             return true;
         }
         return false;
