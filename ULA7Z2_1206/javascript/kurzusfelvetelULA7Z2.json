@@ -1,0 +1,87 @@
+{
+  "ULA7Z2_kurzusfelvetel": {
+    "hallgato": {
+      "hnev": "Keresztes Iulia",
+      "szulev": 2002,
+      "szak": "programtervezö informatikus"
+    },
+    "kurzusok": {
+      "kurzus": [
+        {
+          "kurzusnev": "Idegennyelv I.",
+          "kredit": 0,
+          "hely": "A5/202",
+          "idopont": "Hétfö, 12-14",
+          "oktató": "Pásztor Krisztina"
+        },
+        {
+          "kurzusnev": "Mesterséges intelligencia",
+          "kredit": 5,
+          "hely": "XXXII. elöadó",
+          "idopont": "Kedd, 10-12",
+          "oktató": "Kunné Tamás Judit",
+          "óraadó": "Fazekas Levente"
+        },
+        {
+          "kurzusnev": "Adatkezelés XML környezetben",
+          "kredit": 5,
+          "hely": "XXXII. elöadó",
+          "idopont": "Kedd, 12-14",
+          "oktató": "Bednarik László"
+        },
+        {
+          "kurzusnev": "Algoritmusok és vizsgálatuk",
+          "kredit": 5,
+          "hely": "A1/320",
+          "idopont": "Kedd, 14-18",
+          "oktató": "Házy Attila"
+        },
+        {
+          "kurzusnev": "Adatkezelés XML környezetben",
+          "kredit": 5,
+          "hely": "Inf/101",
+          "idopont": "Szerda, 12-14",
+          "óraadó": "Bednarik László"
+        },
+        {
+          "kurzusnev": "Vállalati információs rendszerek fejlesztése",
+          "kredit": 5,
+          "hely": "Inf/101",
+          "idopont": "Szerda, 14-16",
+          "oktató": "Sasvári Péter"
+        },
+        {
+          "kurzusnev": "Vállalati információs rendszerek fejlesztése",
+          "kredit": 5,
+          "hely": "Inf/101",
+          "idopont": "Szerda, 18-20",
+          "óraadó": "Sasvári Péter"
+        },
+        {
+          "kurzusnev": "Mesterséges intelligencia",
+          "kredit": 5,
+          "hely": "III. elöadó",
+          "idopont": "Csütörtök, 10-12",
+          "óraadó": "Fazekas Levente"
+        },
+        {
+          "kurzusnev": "Versenyrobotok programozása",
+          "kredit": 3,
+          "hely": "",
+          "idopont": "Csütörtök, 14-16",
+          "óraadó": [
+            "Lengyelné Szilágyi Szivia",
+            "Körei Attila"
+          ]
+        },
+        {
+          "kurzusnev": "Játékprototípusok",
+          "kredit": 5,
+          "hely": "Inf/15",
+          "idopont": "Csütörtök, 16-20",
+          "óraadó": "Kis Áron"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,87 @@
+{
+    "ULA7Z2_kurzusfelvetel": {
+        "kurzusok": {
+            "kurzus": [
+                {
+                    "hely": "A5/202",
+                    "idopont": "Hétfö, 12-14",
+                    "oktató": "Pásztor Krisztina",
+                    "kredit": 0,
+                    "kurzusnev": "Idegennyelv I."
+                },
+                {
+                    "óraadó": "Fazekas Levente",
+                    "hely": "XXXII. elöadó",
+                    "idopont": "Kedd, 10-12",
+                    "oktató": "Kunné Tamás Judit",
+                    "kredit": 5,
+                    "kurzusnev": "Mesterséges intelligencia"
+                },
+                {
+                    "hely": "XXXII. elöadó",
+                    "idopont": "Kedd, 12-14",
+                    "oktató": "Bednarik László",
+                    "kredit": 5,
+                    "kurzusnev": "Adatkezelés XML környezetben"
+                },
+                {
+                    "hely": "A1/320",
+                    "idopont": "Kedd, 14-18",
+                    "oktató": "Házy Attila",
+                    "kredit": 5,
+                    "kurzusnev": "Algoritmusok és vizsgálatuk"
+                },
+                {
+                    "óraadó": "Bednarik László",
+                    "hely": "Inf/101",
+                    "idopont": "Szerda, 12-14",
+                    "kredit": 5,
+                    "kurzusnev": "Adatkezelés XML környezetben"
+                },
+                {
+                    "hely": "Inf/101",
+                    "idopont": "Szerda, 14-16",
+                    "oktató": "Sasvári Péter",
+                    "kredit": 5,
+                    "kurzusnev": "Vállalati információs rendszerek fejlesztése"
+                },
+                {
+                    "óraadó": "Sasvári Péter",
+                    "hely": "Inf/101",
+                    "idopont": "Szerda, 18-20",
+                    "kredit": 5,
+                    "kurzusnev": "Vállalati információs rendszerek fejlesztése"
+                },
+                {
+                    "óraadó": "Fazekas Levente",
+                    "hely": "III. elöadó",
+                    "idopont": "Csütörtök, 10-12",
+                    "kredit": 5,
+                    "kurzusnev": "Mesterséges intelligencia"
+                },
+                {
+                    "óraadó": [
+                        "Lengyelné Szilágyi Szivia",
+                        "Körei Attila"
+                    ],
+                    "hely": "",
+                    "idopont": "Csütörtök, 14-16",
+                    "kredit": 3,
+                    "kurzusnev": "Versenyrobotok programozása"
+                },
+                {
+                    "óraadó": "Kis Áron",
+                    "hely": "Inf/15",
+                    "idopont": "Csütörtök, 16-20",
+                    "kredit": 5,
+                    "kurzusnev": "Játékprototípusok"
+                }
+            ]
+        },
+        "hallgato": {
+            "szulev": 2002,
+            "hnev": "Keresztes Iulia",
+            "szak": "programtervezö informatikus"
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <script>
+        var all;
+        fetch('./kurzusfelvetelULA7Z2.json')
+        .then((response) => response.json()).then((data) => all = data).then(() => {
+            var toWrite = "";
+            toWrite = printAll(all, 0, toWrite);
+            console.log(toWrite);
+            toWrite = toWrite.replace(/(?:\r\n|\r|\n)/g, '<br>');
+            document.getElementById("writeHere").innerHTML = toWrite;
+            return true;
+        });
+
+        function printAll(toPrint, indentAmount, toWrite){
+            if (Array.isArray(toPrint)){
+                for (var i = 0; i < toPrint.length; i++){
+                    toWrite += "\n";
+                    toWrite = indent(indentAmount, toWrite);
+                    toWrite += (i+1) + ": ";
+                    toWrite = printAll(toPrint[i], indentAmount + 1, toWrite);
+                }
+            }
+            else if (typeof toPrint == "object"){
+                var keys = Object.keys(toPrint);
+                toWrite += "\n";
+                for (var i = 0; i < keys.length; i++){
+                    toWrite += keys[i] + ": ";
+                    toWrite = printAll(toPrint[keys[i]], indentAmount, toWrite);
+                    toWrite += "\n";
+                }
+            }
+            else if (typeof toPrint == "string" || typeof toPrint == "number"){
+                toWrite += toPrint;
+            }
+            return toWrite;
+        }
+
+        function indent(indentAmount, toWrite){
+            for (var i = 0; i < indentAmount; i++){
+                toWrite += "    ";
+            }
+            return toWrite;
+	    }
+    </script>
+</head>
+<body>
+<p id="writeHere">
+</p>
+</body>

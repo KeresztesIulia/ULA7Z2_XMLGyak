@@ -1,13 +1,17 @@
 {
     "java.project.sourcePaths": [
         "ULA7Z2_1025\\SaxULA7Z2\\src",
-        "ULA7Z2_1108\\DomParserULA7Z2 copy\\src",
         "ULA7Z2_1108\\DomParserULA7Z2\\src",
         "ULA7Z2_1108\\DomWriteULA7Z2\\src",
         "ULA7Z2_1115\\DomModifyULA7Z2\\src",
         "ULA7Z2_1115\\DomQueryULA7Z2\\src",
+        "ULA7Z2_1122\\xPathULA7Z2_2\\src",
         "ULA7Z2_1122\\xPathULA7Z2\\src",
-        "ULA7Z2_1122\\xPathULA7Z2_2\\src"
+        "ULA7Z2_1206\\JSONParseULA7Z2\\src\\main\\java"
     ],
-    "java.dependency.packagePresentation": "hierarchical"
+    "java.dependency.packagePresentation": "hierarchical",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Program Files\\JSON simple\\json-simple-1.1.1.jar"
+    ]
 }
