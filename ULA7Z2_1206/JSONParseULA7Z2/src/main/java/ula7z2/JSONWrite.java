@@ -1,10 +1,10 @@
 package ula7z2;
 
-import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
+import java.util.HashMap;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -16,35 +16,40 @@ public class JSONWrite {
 		String writePath = "ULA7Z2_1206/JSONParseULA7Z2/src/main/resources/kurzusfelvetelULA7Z2_1.json";
 
 		// tartalom létrehozása
-		JSONObject all = new JSONObject();
-		JSONObject root = new JSONObject();
+		// HashMappel a type safety warning miatt, később át van konverálva JSONObjectté
+		HashMap<String, JSONObject> allHash = new HashMap<>();
+		HashMap<String, JSONObject> rootHash = new HashMap<>();
 
 		// hallgató létrehozása
 		JSONObject student = createStudent("Keresztes Iulia", 2002, "programtervezö informatikus");
-		root.put("hallgato", student);
+		rootHash.put("hallgato", student);
 
 		// kurzusok létrehozása
 		String[] courseNames = {"Idegennyelv I.", "Mesterséges intelligencia", "Adatkezelés XML környezetben", "Algoritmusok és vizsgálatuk", "Adatkezelés XML környezetben", "Vállalati információs rendszerek fejlesztése", "Vállalati információs rendszerek fejlesztése", "Mesterséges intelligencia", "Versenyrobotok programozása", "Játékprototípusok"};
 		int[] courseCredits = {0, 5, 5, 5, 5, 5, 5, 5, 3, 5};
-		String[] courseLocations = {"A5/202", "XXXII. elöadó", "XXXII. elöadó", "A1/320", "Inf/101", "Inf/101", "Inf/101", "III. elöadó", "", "Inf/15"};
+		String[] courseLocations = {"A5/202", "XXXII. elöadó", "XXXII. elöadó", "A1/320", "Inf/101", "Inf/101", "Inf/101", "III. elöadó", "Tréningstúdió", "Inf/15"};
 		String[] courseTimes = {"Hétfö, 12-14", "Kedd, 10-12", "Kedd, 12-14", "Kedd, 14-18", "Szerda, 12-14", "Szerda, 14-16", "Szerda, 18-20", "Csütörtök, 10-12", "Csütörtök, 14-16", "Csütörtök, 16-20"};
 		String[][] courseLecturers = {{"Pásztor Krisztina"}, {"Kunné Tamás Judit"}, {"Bednarik László"}, {"Házy Attila"}, null, {"Sasvári Péter"}, null, null, null, null};
 		String[][] courseTeachers = {null, {"Fazekas Levente"}, null, null, {"Bednarik László"}, null, {"Sasvári Péter"}, {"Fazekas Levente"}, {"Lengyelné Szilágyi Szivia", "Körei Attila"}, {"Kis Áron"}};
-		JSONObject courses = new JSONObject();
+		HashMap<String, Object> coursesHash = new HashMap<>();
 		if (courseNames.length == 1){
 			JSONObject courseObject = createCourse(courseNames[0], courseCredits[0], courseLocations[0], courseTimes[0], courseLecturers[0], courseTeachers[0]);
-			courses.put("kurzus", courseObject);
+			coursesHash.put("kurzus", courseObject);
 		}
 		else{
 			JSONArray coursesArray = new JSONArray();
 			for (int i = 0; i < courseNames.length; i++){
 				coursesArray.add(createCourse(courseNames[i], courseCredits[i], courseLocations[i], courseTimes[i], courseLecturers[i], courseTeachers[i]));
 			}
-			courses.put("kurzus", coursesArray);
+			coursesHash.put("kurzus", coursesArray);
 		}
-		root.put("kurzusok", courses);
+		JSONObject courses = new JSONObject(coursesHash);
+		rootHash.put("kurzusok", courses);
 
-		all.put("ULA7Z2_kurzusfelvetel", root);
+		JSONObject root = new JSONObject(rootHash);
+		allHash.put("ULA7Z2_kurzusfelvetel", root);
+
+		JSONObject all = new JSONObject(allHash);
 		printNormal(all, 0);
 
 		// kiírás file-ba
@@ -60,11 +65,11 @@ public class JSONWrite {
 	}
 
 	private static JSONObject createStudent(String name, int birthyear, String major){
-		JSONObject student = new JSONObject();
+		HashMap<String, Object> student = new HashMap<>();
 		student.put("hnev", name);
 		student.put("szulev", birthyear);
 		student.put("szak", major);
-		return student;
+		return new JSONObject(student);
 	}
 
 	private static JSONObject createCourse(String name, int credit, String location, String time, String[] lecturers, String[] teachers){
@@ -72,7 +77,7 @@ public class JSONWrite {
 			System.err.println("Legalább egy oktatónak vagy óraadónak lennie kell!");
 			return null;
 		}
-		JSONObject course = new JSONObject();
+		HashMap<String, Object> course = new HashMap<>();
 		course.put("kurzusnev", name);
 		course.put("kredit", credit);
 		course.put("hely", location);
@@ -98,7 +103,7 @@ public class JSONWrite {
 				course.put("óraadó", teacherArray);
 			}
 		}
-		return course;
+		return new JSONObject(course);
 	}
 
 	private static void printNormal(Object toPrint, int indentAmount){

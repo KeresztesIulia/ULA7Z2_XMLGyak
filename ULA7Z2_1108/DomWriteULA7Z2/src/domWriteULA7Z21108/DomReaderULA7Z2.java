@@ -1,9 +1,41 @@
 package domWriteULA7Z21108;
 
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
+
 import org.w3c.dom.*;
+import org.xml.sax.SAXException;
 
 public class DomReaderULA7Z2 {
     
+    static Document readXML(String path){
+		Document dom = null;
+		try{
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder db = dbf.newDocumentBuilder();
+			dom = db.parse(new File(path));
+			dom.normalize();
+		}
+		catch (ParserConfigurationException pce){
+			System.err.println("Parser config error!");
+			pce.printStackTrace();
+			
+		}
+		catch (IOException ioe){
+			System.out.println("Parsing error!");
+			ioe.printStackTrace();
+		}
+		catch (SAXException saxe){
+			System.out.println("SAX exeption!");
+			saxe.printStackTrace();
+		}
+		return dom;
+	}
+
     public static void domReader(Document document){
         Element rootElement = document.getDocumentElement();
         printChildren((Node)rootElement, 0);

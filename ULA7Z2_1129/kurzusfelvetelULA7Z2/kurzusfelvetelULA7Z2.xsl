@@ -6,11 +6,11 @@
         <html>
             <body>
                 <div>
-                    <h2><xsl:value-of select="hallgato/hnev" /> kurzusfelvétel - 2023/24. I. félév</h2>
+                    <h2><xsl:value-of select="hallgato/hnev" /> (<xsl:value-of select="hallgato/@id"/>) kurzusfelvétel - 2023/24. I. félév</h2>
                     <ul>
-                        <li>évfolyam: <xsl:value-of select="hallgato/@evf"/>.</li>
                         <li>születési év: <xsl:value-of select="hallgato/szulev"/></li>
                         <li>szak: <xsl:value-of select="hallgato/szak"/></li>
+                        <li><xsl:value-of select="hallgato/szak/@evf"/>. évfolyam</li>
                     </ul>
                 </div>
                 <div>

@@ -14,10 +14,9 @@
             <hely>A5/202</hely>
             <idopont>Hétfö, 12-14</idopont>
             <oktató>Pásztor Krisztina</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
-        <kurzus id="GEIAK130-B_00" jóváhagyás="nem">
+        <kurzus id="GEIAK130-B_00" jóváhagyás="igen">
             <kurzusnev>Mesterséges intelligencia</kurzusnev>
             <kredit>5</kredit>
             <hely>XXXII. elöadó</hely>
@@ -26,50 +25,47 @@
             <óraadó>Fazekas Levente</óraadó>
         </kurzus>
 
-        <kurzus id="GEIAL332-B_00">
-            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+        <kurzus id="GEIAL332-B_00" jóváhagyás="igen">
+            <kurzusnev>Adatkezelés XML környezetben (GEIAL332-B_00)</kurzusnev>
             <kredit>5</kredit>
             <hely>XXXII. elöadó</hely>
             <idopont>Kedd, 12-14</idopont>
             <oktató>Bednarik László</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
-        <kurzus id="GEMAK234-B" jóváhagyás="nem">
+        <kurzus id="GEMAK234-B" jóváhagyás="igen">
             <kurzusnev>Algoritmusok és vizsgálatuk</kurzusnev>
             <kredit>5</kredit>
             <hely>A1/320</hely>
             <idopont>Kedd, 14-18</idopont>
             <oktató>Házy Attila</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
         <kurzus id="GEIAL332-B_02" jóváhagyás="igen">
-            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kurzusnev>Adatkezelés XML környezetben gyakorlat (GEIAL332-B_02)</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/101</hely>
             <idopont>Szerda, 12-14</idopont>
             <óraadó>Bednarik László</óraadó>
         </kurzus>
 
-        <kurzus id="GEIAL315-B_00">
-            <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
+        <kurzus id="GEIAL315-B_00" jóváhagyás="igen">
+            <kurzusnev>Vállalati információs rendszerek fejlesztése gyakorlat (GEIAL315-B_00)</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/101</hely>
             <idopont>Szerda, 14-16</idopont>
             <oktató>Sasvári Péter</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
         <kurzus id="GEIAL315-B_01" jóváhagyás="igen">
-            <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
+            <kurzusnev>Vállalati információs rendszerek fejlesztése gyakorlat (GEIAL315-B_01)</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/101</hely>
             <idopont>Szerda, 18-20</idopont>
             <óraadó>Sasvári Péter</óraadó>
         </kurzus>
 
-        <kurzus id="GEIAK130-B_01">
+        <kurzus id="GEIAK130-B_01" jóváhagyás="igen">
             <kurzusnev>Mesterséges intelligencia</kurzusnev>
             <kredit>5</kredit>
             <hely>III. elöadó</hely>
@@ -77,17 +73,8 @@
             <óraadó>Fazekas Levente</óraadó>
         </kurzus>
 
-        <kurzus id="GEMAKVRP2-B2_02">
-            <kurzusnev>Versenyrobotok programozása</kurzusnev>
-            <kredit>3</kredit>
-            <hely>Tréningstúdió</hely>
-            <idopont>Csütörtök, 14-16</idopont>
-            <óraadó>Lengyelné Szilágyi Szivia</óraadó>
-            <óraadó>Körei Attila</óraadó>
-        </kurzus>
-
-        <kurzus id="GEIAK310-B">
-            <kurzusnev>Játékprototípusok</kurzusnev>
+        <kurzus id="GEIAK310-B" jóváhagyás="igen">
+            <kurzusnev>Játékprototípusok gyakorlat</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/15</hely>
             <idopont>Csütörtök, 16-20</idopont>

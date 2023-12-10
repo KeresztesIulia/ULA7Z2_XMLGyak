@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ULA7Z2_kurzusfelvetel egyetem="ME" tanev="2023/24 I.">
+<ULA7Z2_kurzusfelvetel tanev="2023/24 I." egyetem="ME" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="ULA7Z2_kurzusfelvetel.xsd">
     <hallgato id="ULA7Z2">
         <hnev>Keresztes Iulia</hnev>
         <szulev>2002</szulev>
@@ -14,7 +14,6 @@
             <hely>A5/202</hely>
             <idopont>Hétfö, 12-14</idopont>
             <oktató>Pásztor Krisztina</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
         <kurzus id="GEIAK130-B_00" jóváhagyás="nem">
@@ -32,7 +31,6 @@
             <hely>XXXII. elöadó</hely>
             <idopont>Kedd, 12-14</idopont>
             <oktató>Bednarik László</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
         <kurzus id="GEMAK234-B" jóváhagyás="nem">
@@ -41,7 +39,6 @@
             <hely>A1/320</hely>
             <idopont>Kedd, 14-18</idopont>
             <oktató>Házy Attila</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
         <kurzus id="GEIAL332-B_02" jóváhagyás="igen">
@@ -58,7 +55,6 @@
             <hely>Inf/101</hely>
             <idopont>Szerda, 14-16</idopont>
             <oktató>Sasvári Péter</oktató>
-            <óraadó>plusz óraadó</óraadó>
         </kurzus>
 
         <kurzus id="GEIAL315-B_01" jóváhagyás="igen">
@@ -93,7 +89,6 @@
             <idopont>Csütörtök, 16-20</idopont>
             <óraadó>Kis Áron</óraadó>
         </kurzus>
-
     </kurzusok>
 
 </ULA7Z2_kurzusfelvetel>

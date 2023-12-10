@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<!-- egyszerű típusok -->
+
+<xs:element name="fellépő_név" type="xs:string"/>
+<xs:element name="ország" type="xs:string"/>
+<xs:element name="díj" type="xs:string"/>
+
+<xs:element name="fesztivál_név" type="xs:string"/>
+<xs:element name="helyszín" type="xs:string"/>
+<xs:element name="év" type="xs:int"/>
+
+<xs:element name="bár_név" type="xs:string"/>
+<xs:element name="ital" type="xs:string"/>
+<xs:element name="cég" type="xs:string"/>
+
+<xs:element name="alkalmazott_név" type="xs:string"/>
+<xs:element name="műszak" type="xs:string"/>
+<xs:element name="fizetés" type="xs:string"/>
+
+<xs:element name="tulajdonos_név" type="xs:string"/>
+<xs:element name="adószám" type="xs:string"/>
+<xs:element name="alapítás" type="xs:string"/>
+<xs:element name="bevétel" type="xs:string"/>
+
+<xs:element name="résztvevő_név" type="xs:string"/>
+<xs:element name="diákigazolvány" type="xs:string"/>
+<xs:element name="település" type="xs:string"/>
+<xs:element name="utca" type="xs:string"/> 
+<xs:element name="házszám" type="xs:string"/>
+
+<xs:element name="kérdező" type="xs:string"/>
+
+<xs:element name="nyelv" type="xs:string"/>
+<xs:element name="szint" type="szintTípus"/>
+
+<xs:simpleType name="szintTípus">
+    <xs:restriction base="xs:string">
+        <xs:pattern value="[A-C][1-2]"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<!-- komplex típusok -->
+<xs:element name="fellépő" type="fellépőTípus" />
+<xs:complexType name="fellépőTípus">
+    <xs:sequence>
+        <xs:element ref="fellépő_név" />
+        <xs:element ref="ország" />
+        <xs:element ref="díj" />
+    </xs:sequence>
+    <xs:attribute ref="FEL_ID"/>
+    <xs:attribute ref="FEL_FESZ"/>
+</xs:complexType>
+
+<xs:element name="fesztivál" type="fesztiválTípus" />
+<xs:complexType name="fesztiválTípus">
+    <xs:sequence>
+        <xs:element ref="fesztivál_név" />
+        <xs:element ref="helyszín" />
+        <xs:element ref="év" />
+    </xs:sequence>
+    <xs:attribute ref="FESZ_ID"/>
+</xs:complexType>
+
+<xs:element name="bár" type="bárTípus" />
+<xs:complexType name="bárTípus">
+    <xs:sequence>
+        <xs:element ref="bár_név" />
+        <xs:element ref="ital" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="cég" />
+    </xs:sequence>
+    <xs:attribute ref="B_ID"/>
+    <xs:attribute ref="FESZ_B"/>
+</xs:complexType>
+
+<xs:element name="alkalmazott" type="alkalmazottTípus" />
+<xs:complexType name="alkalmazottTípus">
+    <xs:sequence>
+        <xs:element ref="alkalmazott_név" />
+        <xs:element ref="műszak" minOccurs="1" maxOccurs="unbounded" />
+        <xs:element ref="fizetés" />
+    </xs:sequence>
+    <xs:attribute ref="A_ID"/>
+    <xs:attribute ref="B_A"/>
+</xs:complexType>
+
+<xs:element name="tulajdonos" type="tulajdonosTípus" />
+<xs:complexType name="tulajdonosTípus">
+    <xs:sequence>
+        <xs:element ref="tulajdonos_név" />
+        <xs:element ref="adószám" />
+        <xs:element ref="alapítás" />
+        <xs:element ref="bevétel" />
+    </xs:sequence>
+    <xs:attribute ref="T_ID"/>
+    <xs:attribute ref="FESZ_T"/>
+</xs:complexType>
+
+<xs:element name="lakcím" type="lakcímTípus" />
+<xs:complexType name="lakcímTípus">
+    <xs:sequence>
+        <xs:element ref="település" />
+        <xs:element ref="utca" />
+        <xs:element ref="házszám" />
+    </xs:sequence>
+</xs:complexType>
+
+<xs:element name="résztvevő" type="résztvevőTípus" />
+<xs:complexType name="résztvevőTípus">
+    <xs:sequence>
+        <xs:element ref="résztvevő_név" />
+        <xs:element ref="diákigazolvány" minOccurs="0" maxOccurs="1" />
+        <xs:element ref="lakcím" />
+    </xs:sequence>
+    <xs:attribute ref="R_ID"/>
+    <xs:attribute ref="FESZ_R"/>
+</xs:complexType>
+
+<xs:element name="közvélemény" type="közvéleményTípus" />
+<xs:complexType name="közvéleményTípus">
+    <xs:sequence>
+        <xs:element ref="kérdező" />
+    </xs:sequence>
+    <xs:attribute ref="K_ID"/>
+    <xs:attribute ref="K_R"/>
+    <xs:attribute ref="K_NY"/>
+</xs:complexType>
+
+<xs:element name="nyelvtudás" type="nyelvtudásTípus" />
+<xs:complexType name="nyelvtudásTípus">
+    <xs:sequence>
+        <xs:element ref="nyelv" />
+        <xs:element ref="szint" />
+    </xs:sequence>
+    <xs:attribute ref="NY_ID"/>
+</xs:complexType>
+
+<!-- gyökérelem refek -->
+<xs:element name="Fesztivál_ULA7Z2">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="fesztivál" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="fellépő" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="bár" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="alkalmazott" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="tulajdonos" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="résztvevő" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="nyelvtudás" minOccurs="0" maxOccurs="unbounded" />
+            <xs:element ref="közvélemény" minOccurs="0" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+    <!-- elsődleges kulcsok -->
+    <xs:key name="fellépőID">
+        <xs:selector xpath="fellépő" />
+        <xs:field xpath="@FEL_ID" />
+    </xs:key>
+    <xs:key name="fesztiválID">
+        <xs:selector xpath="fesztivál" />
+        <xs:field xpath="@FESZ_ID" />
+    </xs:key>
+    <xs:key name="bárID">
+        <xs:selector xpath="bár" />
+        <xs:field xpath="@B_ID" />
+    </xs:key>
+    <xs:key name="alkalmazottID">
+        <xs:selector xpath="alkalmazott" />
+        <xs:field xpath="@A_ID" />
+    </xs:key>
+    <xs:key name="tulajdonosID">
+        <xs:selector xpath="tulajdonos" />
+        <xs:field xpath="@T_ID" />
+    </xs:key>
+    <xs:key name="résztvevőID">
+        <xs:selector xpath="résztvevő" />
+        <xs:field xpath="@R_ID" />
+    </xs:key>
+    <xs:key name="nyelvtudásID">
+        <xs:selector xpath="nyelvtudás" />
+        <xs:field xpath="@NY_ID" />
+    </xs:key>
+    <xs:key name="közvéleményID">
+        <xs:selector xpath="közvélemény" />
+        <xs:field xpath="@K_ID" />
+    </xs:key>
+
+    <!-- idegenkulcsok -->
+    <xs:keyref name="fel_feszREF" refer="fesztiválID">
+        <xs:selector xpath="fellépő" />
+        <xs:field xpath="@FEL_FESZ" />
+    </xs:keyref>
+    <xs:keyref name="fesz_bárREF" refer="fesztiválID">
+        <xs:selector xpath="bár" />
+        <xs:field xpath="@FESZ_B" />
+    </xs:keyref>
+    <xs:keyref name="bár_alkREF" refer="bárID">
+        <xs:selector xpath="alkalmazott" />
+        <xs:field xpath="@B_A" />
+    </xs:keyref>
+    <xs:keyref name="fesz_tulREF" refer="fesztiválID">
+        <xs:selector xpath="tulajdonos" />
+        <xs:field xpath="@FESZ_T" />
+    </xs:keyref>
+    <xs:keyref name="fesz_részREF" refer="fesztiválID">
+        <xs:selector xpath="résztvevő" />
+        <xs:field xpath="@FESZ_R" />
+    </xs:keyref>
+    <xs:keyref name="köz_részREF" refer="résztvevőID">
+        <xs:selector xpath="közvélemény" />
+        <xs:field xpath="@K_R" />
+    </xs:keyref>
+    <xs:keyref name="köz_nyelvREF" refer="nyelvtudásID">
+        <xs:selector xpath="közvélemény" />
+        <xs:field xpath="@K_NY" />
+    </xs:keyref>
+</xs:element>
+
+<!-- elsődleges kulcsok -->
+<xs:attribute name="FEL_ID" type="xs:ID"/>
+<xs:attribute name="FESZ_ID" type="xs:ID" />
+<xs:attribute name="B_ID" type="xs:ID"/>
+<xs:attribute name="A_ID" type="xs:ID"/>
+<xs:attribute name="T_ID" type="xs:ID"/>
+<xs:attribute name="R_ID" type="xs:ID"/>
+<xs:attribute name="NY_ID" type="xs:ID"/>
+<xs:attribute name="K_ID" type="xs:ID"/>
+
+
+<!-- idegen kulcsok -->
+<xs:attribute name="FEL_FESZ" type="xs:IDREF"/>
+<xs:attribute name="FESZ_B" type="xs:IDREF"/>
+<xs:attribute name="B_A" type="xs:IDREF"/>
+<xs:attribute name="FESZ_T" type="xs:IDREF"/>
+<xs:attribute name="FESZ_R" type="xs:IDREF"/>
+<xs:attribute name="K_R" type="xs:IDREF"/>
+<xs:attribute name="K_NY" type="xs:IDREF"/>
+
+</xs:schema>

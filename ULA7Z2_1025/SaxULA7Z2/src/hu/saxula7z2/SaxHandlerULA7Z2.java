@@ -14,7 +14,7 @@ public class SaxHandlerULA7Z2 extends DefaultHandler {
 		if(qName == "ULA7Z2_kurzusfelvetel"){
 			System.out.print("ULA7Z2_kurzusfelvétel");
 			String tanev = attributes.getValue("tanev");
-			String egyetem = attributes.getValue("egyetemNeve");
+			String egyetem = attributes.getValue("egyetem");
 			String attribs = " {tanév: " + tanev + ", egyetem neve: " + egyetem + "}";
 			System.out.print(attribs);
 		}
@@ -104,8 +104,8 @@ public class SaxHandlerULA7Z2 extends DefaultHandler {
 		if(qName == "hallgato"){
 			indent(1);
 			System.out.print("hallgató");
-			String evfolyam = attributes.getValue("evf");
-			String attribs = " {évfolyam: " + evfolyam + "}";
+			String neptunkod = attributes.getValue("id");
+			String attribs = " {neptunkód: " + neptunkod + "}";
 			System.out.print(attribs);
 		}
 		if(qName == "hnev"){
@@ -122,6 +122,9 @@ public class SaxHandlerULA7Z2 extends DefaultHandler {
 			indent(2);
 			indentAmount = 2;
 			System.out.print("szak");
+			String evfolyam = attributes.getValue("evf");
+			String attribs = " {évfolyam: " + evfolyam + "}";
+			System.out.print(attribs);
 		}
 		
 	}

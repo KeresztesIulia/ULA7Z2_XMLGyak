@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Fesztivál_ULA7Z2 xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaULA7Z2.xsd">
+    <!-- Fesztiválok -->
+    <fesztivál FESZ_ID="FESZ01">
+        <fesztivál_név>Sziget-fesztivál</fesztivál_név>
+        <helyszín>Budapest</helyszín>
+        <év>2024</év>
+    </fesztivál>
+    <fesztivál FESZ_ID="FESZ02">
+        <fesztivál_név>SUN fesztivál</fesztivál_név>
+        <helyszín>Csobánkapuszta</helyszín>
+        <év>2023</év>
+    </fesztivál>
+
+    <!-- Fellépők -->
+    <fellépő FEL_ID="FEL01" FEL_FESZ="FESZ01">
+        <fellépő_név>ASA MASA</fellépő_név>
+        <ország>Finnország</ország>
+        <díj>450000</díj>
+    </fellépő>
+    <fellépő FEL_ID="FEL02" FEL_FESZ="FESZ02">
+        <fellépő_név>Ananda Shanti</fellépő_név>
+        <ország>Németország</ország>
+        <díj>500000</díj>
+    </fellépő>
+
+    <!-- Bárok -->
+    <bár B_ID="B01" FESZ_B="FESZ01">
+        <bár_név>Boutiq'Bar</bár_név>
+        <ital>whiskey</ital>
+        <ital>koktél</ital>
+        <ital>tequila</ital>
+        <cég>Metaxa</cég>
+    </bár>
+    <bár B_ID="B02" FESZ_B="FESZ02">
+        <bár_név>Retro Pub</bár_név>
+        <ital>sör</ital>
+        <ital>pálinka</ital>
+        <cég>Heineken</cég>
+    </bár>
+
+    <!-- Alkalmazottak -->
+    <alkalmazott A_ID="A01" B_A="B01">
+        <alkalmazott_név>Pálinkás Elemér</alkalmazott_név>
+        <műszak>nappali</műszak>
+        <fizetés>250000</fizetés>
+    </alkalmazott>
+    <alkalmazott A_ID="A02" B_A="B02">
+        <alkalmazott_név>Áronkané Amália</alkalmazott_név>
+        <műszak>esti</műszak>
+        <fizetés>400000</fizetés>
+    </alkalmazott>
+
+    <!-- Tulajdonosok -->
+    <tulajdonos T_ID="T01" FESZ_T="FESZ01">
+        <tulajdonos_név>Gerendai Károly</tulajdonos_név>
+        <adószám>24150604-2-43</adószám>
+        <alapítás>1993</alapítás>
+        <bevétel>2000000</bevétel>
+    </tulajdonos>
+    <tulajdonos T_ID="T02" FESZ_T="FESZ02">
+        <tulajdonos_név>Mély Mosoly Alapítvány</tulajdonos_név>
+        <adószám>HU 18167838</adószám>
+        <alapítás>1999</alapítás>
+        <bevétel>1500000</bevétel>
+    </tulajdonos>
+
+    <!-- Résztvevők -->
+    <résztvevő R_ID="R01" FESZ_R="FESZ01">
+        <résztvevő_név>Cserei Ágnes</résztvevő_név>
+        <diákigazolvány>26448557956</diákigazolvány>
+        <lakcím>
+            <település>Budapest</település>
+            <utca>Láng Endre u.</utca>
+            <házszám>14</házszám>
+        </lakcím>
+    </résztvevő>
+    <résztvevő R_ID="R02" FESZ_R="FESZ02">
+        <résztvevő_név>Kalapos Márton</résztvevő_név>
+        <lakcím>
+            <település>Debrecen</település>
+            <utca>Tas u.</utca>
+            <házszám>6</házszám>
+        </lakcím>
+    </résztvevő>
+
+    <!-- Nyelvtudás -->
+    <nyelvtudás NY_ID="EN_A1">
+        <nyelv>angol</nyelv>
+        <szint>A1</szint>
+    </nyelvtudás>
+    <nyelvtudás NY_ID="EN_A2">
+        <nyelv>angol</nyelv>
+        <szint>A2</szint>
+    </nyelvtudás> 
+    <nyelvtudás NY_ID="EN_B1">
+        <nyelv>angol</nyelv>
+        <szint>B1</szint>
+    </nyelvtudás>  
+    <nyelvtudás NY_ID="EN_B2">
+        <nyelv>angol</nyelv>
+        <szint>B2</szint>
+    </nyelvtudás>
+    <nyelvtudás NY_ID="EN_C1">
+        <nyelv>angol</nyelv>
+        <szint>C1</szint>
+    </nyelvtudás> 
+    <nyelvtudás NY_ID="EN_C2">
+        <nyelv>angol</nyelv>
+        <szint>C2</szint>
+    </nyelvtudás>
+
+    <!-- Közvélemények -->
+    <közvélemény K_ID="K01" K_R="R01" K_NY="EN_B1">
+        <kérdező>Ólom Iván János</kérdező>
+    </közvélemény>
+    <közvélemény K_ID="K02" K_R="R02" K_NY="EN_C2">
+        <kérdező>Mérai Kevin</kérdező>
+    </közvélemény>
+</Fesztivál_ULA7Z2>

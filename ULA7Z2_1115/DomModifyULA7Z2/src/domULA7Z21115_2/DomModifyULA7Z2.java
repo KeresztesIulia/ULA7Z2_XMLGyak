@@ -22,9 +22,9 @@ public class DomModifyULA7Z2 {
         }
         Element root = dom.getDocumentElement();
         Map<String, List<Node>> domAllNodes = new Hashtable<>();
-        buildDomTree(domAllNodes, root);
+        collectNodesByName(domAllNodes, root);
 
-        // a)
+        // a) óraadó elem hozzáadása, majd módosított file mentése
         addÓraadóAndSave(domAllNodes, dom, "plusz óraadó", writePath);
 
         // b) - nem volt nyelv megadva, úgyhogy a jóváhagyást módosítottam nem-ről igen-re
@@ -63,7 +63,7 @@ public class DomModifyULA7Z2 {
         return dom;
     }
 
-    static void buildDomTree(Map<String, List<Node>> nodeDictionary, Node startNode){
+    static void collectNodesByName(Map<String, List<Node>> nodeDictionary, Node startNode){
         if (startNode.hasChildNodes()){
             for (Node child = startNode.getFirstChild(); child != null; child = child.getNextSibling()){
                 String nodeName = child.getNodeName();
@@ -74,7 +74,7 @@ public class DomModifyULA7Z2 {
                     }
                     nodeDictionary.get(nodeName).add(child);
                 }
-                buildDomTree(nodeDictionary, child);
+                collectNodesByName(nodeDictionary, child);
             }
         } 
 

@@ -138,6 +138,7 @@ public class DomQueryULA7Z2 {
             if (idopont.contains(day)) napiKurzusok.add(kurzus);
         }
 
+        System.out.println(day + "i kurzusok:");
         if (napiKurzusok.size() == 0) System.out.println("Ezen a napon nincs óra!");
         else for (int i = 0; i < napiKurzusok.size(); i++){
                 DomReaderULA7Z2.printChildren(napiKurzusok.get(i), 0);

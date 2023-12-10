@@ -1,12 +1,11 @@
-<!DOCTYPE HTML>
 <html>
    <body>
       <div>
-         <h2>Keresztes Iulia kurzusfelvétel - 2023/24. I. félév</h2>
+         <h2>Keresztes Iulia (ULA7Z2) kurzusfelvétel - 2023/24. I. félév</h2>
          <ul>
-            <li>évfolyam: 3.</li>
             <li>születési év: 2002</li>
             <li>szak: programtervezö informatikus</li>
+            <li>3. évfolyam</li>
          </ul>
       </div>
       <div>
@@ -20,84 +19,84 @@
                <th>tanárok</th>
             </tr>
             <tr>
-               <td>Idegennyelv I. (ULA7Z2_A1)</td>
+               <td>Idegennyelv I. (MIGEBANNY1_02)</td>
                <td>igen</td>
                <td>0</td>
                <td>A5/202</td>
                <td>Hétfö, 12-14</td>
-               <td>Pásztor Krisztina<br /></td>
+               <td>Pásztor Krisztina<br/></td>
             </tr>
             <tr>
-               <td>Mesterséges intelligencia (ULA7Z2_MElm)</td>
+               <td>Mesterséges intelligencia (GEIAK130-B_00)</td>
                <td>nem</td>
                <td>5</td>
                <td>XXXII. elöadó</td>
                <td>Kedd, 10-12</td>
-               <td>Kunné Tamás Judit<br />Fazekas Levente<br /></td>
+               <td>Kunné Tamás Judit<br/>Fazekas Levente<br/></td>
             </tr>
             <tr>
-               <td>Adatkezelés XML környezetben (ULA7Z2_XMLElm)</td>
+               <td>Adatkezelés XML környezetben (GEIAL332-B_00)</td>
                <td></td>
                <td>5</td>
                <td>XXXII. elöadó</td>
                <td>Kedd, 12-14</td>
-               <td>Bednarik László<br /></td>
+               <td>Bednarik László<br/></td>
             </tr>
             <tr>
-               <td>Algoritmusok és vizsgálatuk (ULA7Z2_Alg)</td>
+               <td>Algoritmusok és vizsgálatuk (GEMAK234-B)</td>
                <td>nem</td>
                <td>5</td>
                <td>A1/320</td>
                <td>Kedd, 14-18</td>
-               <td>Házy Attila<br /></td>
+               <td>Házy Attila<br/></td>
             </tr>
             <tr>
-               <td>Adatkezelés XML környezetben (ULA7Z2_XMLGyak)</td>
+               <td>Adatkezelés XML környezetben (GEIAL332-B_02)</td>
                <td>igen</td>
                <td>5</td>
                <td>Inf/101</td>
                <td>Szerda, 12-14</td>
-               <td>Bednarik László<br /></td>
+               <td>Bednarik László<br/></td>
             </tr>
             <tr>
-               <td>Vállalati információs rendszerek fejlesztése (ULA7Z2_VElm)</td>
+               <td>Vállalati információs rendszerek fejlesztése (GEIAL315-B_00)</td>
                <td></td>
                <td>5</td>
                <td>Inf/101</td>
                <td>Szerda, 14-16</td>
-               <td>Sasvári Péter<br /></td>
+               <td>Sasvári Péter<br/></td>
             </tr>
             <tr>
-               <td>Vállalati információs rendszerek fejlesztése (ULA7Z2_VGyak)</td>
+               <td>Vállalati információs rendszerek fejlesztése (GEIAL315-B_01)</td>
                <td>igen</td>
                <td>5</td>
                <td>Inf/101</td>
                <td>Szerda, 18-20</td>
-               <td>Sasvári Péter<br /></td>
+               <td>Sasvári Péter<br/></td>
             </tr>
             <tr>
-               <td>Mesterséges intelligencia (ULA7Z2_MGyak)</td>
+               <td>Mesterséges intelligencia (GEIAK130-B_01)</td>
                <td></td>
                <td>5</td>
                <td>III. elöadó</td>
                <td>Csütörtök, 10-12</td>
-               <td>Fazekas Levente<br /></td>
+               <td>Fazekas Levente<br/></td>
             </tr>
             <tr>
-               <td>Versenyrobotok programozása (ULA7Z2_VRob)</td>
+               <td>Versenyrobotok programozása (GEMAKVRP2-B2_02)</td>
                <td></td>
                <td>3</td>
                <td>Tréningstúdió</td>
                <td>Csütörtök, 14-16</td>
-               <td>Lengyelné Szilágyi Szivia<br />Körei Attila<br /></td>
+               <td>Lengyelné Szilágyi Szivia<br/>Körei Attila<br/></td>
             </tr>
             <tr>
-               <td>Játékprototípusok (ULA7Z2_JProto)</td>
+               <td>Játékprototípusok (GEIAK310-B)</td>
                <td></td>
                <td>5</td>
                <td>Inf/15</td>
                <td>Csütörtök, 16-20</td>
-               <td>Kis Áron<br /></td>
+               <td>Kis Áron<br/></td>
             </tr>
          </table>
       </div>

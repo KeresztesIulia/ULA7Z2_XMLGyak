@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<ULA7Z2_kurzusfelvetel egyetemNeve="ME" tanev="2023/24 I">
-    <hallgato evf="3">
+<ULA7Z2_kurzusfelvetel egyetem="ME" tanev="2023/2024 I.">
+    <hallgato id="ULA7Z2">
         <hnev>Keresztes Iulia</hnev>
         <szulev>2002</szulev>
-        <szak>programtervezö informatikus</szak>
+        <szak evf="3">programtervezö informatikus</szak>
     </hallgato>
 
     <kurzusok>
-        <kurzus id="ULA7Z2_A1" jóváhagyás="igen">
+        <kurzus id="MIGEBANNY1_02" jóváhagyás="igen">
             <kurzusnev>Idegennyelv I.</kurzusnev>
             <kredit>0</kredit>
             <hely>A5/202</hely>
-            <idopont>Hétfö, 12-14</idopont>
+            <idopont>Hétfő, 12-14</idopont>
             <oktató>Pásztor Krisztina</oktató>
         </kurzus>
 
-        <kurzus id="ULA7Z2_MElm">
+        <kurzus id="GEIAK130-B_00" jóváhagyás="nem">
             <kurzusnev>Mesterséges intelligencia</kurzusnev>
             <kredit>5</kredit>
             <hely>XXXII. elöadó</hely>
@@ -25,7 +25,7 @@
             <óraadó>Fazekas Levente</óraadó>
         </kurzus>
 
-        <kurzus id="ULA7Z2_XMLElm">
+        <kurzus id="GEIAL332-B_00">
             <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
             <kredit>5</kredit>
             <hely>XXXII. elöadó</hely>
@@ -33,7 +33,7 @@
             <oktató>Bednarik László</oktató>
         </kurzus>
 
-        <kurzus id="ULA7Z2_Alg">
+        <kurzus id="GEMAK234-B" jóváhagyás="nem">
             <kurzusnev>Algoritmusok és vizsgálatuk</kurzusnev>
             <kredit>5</kredit>
             <hely>A1/320</hely>
@@ -41,7 +41,7 @@
             <oktató>Házy Attila</oktató>
         </kurzus>
 
-        <kurzus id="ULA7Z2_XMLGyak">
+        <kurzus id="GEIAL332-B_02" jóváhagyás="igen">
             <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/101</hely>
@@ -49,7 +49,7 @@
             <óraadó>Bednarik László</óraadó>
         </kurzus>
 
-        <kurzus id="ULA7Z2_VElm">
+        <kurzus id="GEIAL315-B_00">
             <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/101</hely>
@@ -57,7 +57,7 @@
             <oktató>Sasvári Péter</oktató>
         </kurzus>
 
-        <kurzus id="ULA7Z2_VGyak">
+        <kurzus id="GEIAL315-B_01" jóváhagyás="igen">
             <kurzusnev>Vállalati információs rendszerek fejlesztése</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/101</hely>
@@ -65,7 +65,7 @@
             <óraadó>Sasvári Péter</óraadó>
         </kurzus>
 
-        <kurzus id="ULA7Z2_MGyak">
+        <kurzus id="GEIAK130-B_01">
             <kurzusnev>Mesterséges intelligencia</kurzusnev>
             <kredit>5</kredit>
             <hely>III. elöadó</hely>
@@ -73,15 +73,16 @@
             <óraadó>Fazekas Levente</óraadó>
         </kurzus>
 
-        <kurzus id="ULA7Z2_VRob">
+        <kurzus id="GEMAKVRP2-B2_02">
             <kurzusnev>Versenyrobotok programozása</kurzusnev>
             <kredit>3</kredit>
+            <hely>Tréningstúdió</hely>
             <idopont>Csütörtök, 14-16</idopont>
             <óraadó>Lengyelné Szilágyi Szivia</óraadó>
             <óraadó>Körei Attila</óraadó>
         </kurzus>
 
-        <kurzus id="ULA7Z2_JProto">
+        <kurzus id="GEIAK310-B">
             <kurzusnev>Játékprototípusok</kurzusnev>
             <kredit>5</kredit>
             <hely>Inf/15</hely>

@@ -32,9 +32,9 @@
                     "kurzusnev": "Algoritmusok és vizsgálatuk"
                 },
                 {
-                    "óraadó": "Bednarik László",
                     "hely": "Inf/101",
                     "idopont": "Szerda, 12-14",
+                    "óraadó": "Bednarik László",
                     "kredit": 5,
                     "kurzusnev": "Adatkezelés XML környezetben"
                 },
@@ -46,33 +46,33 @@
                     "kurzusnev": "Vállalati információs rendszerek fejlesztése"
                 },
                 {
-                    "óraadó": "Sasvári Péter",
                     "hely": "Inf/101",
                     "idopont": "Szerda, 18-20",
+                    "óraadó": "Sasvári Péter",
                     "kredit": 5,
                     "kurzusnev": "Vállalati információs rendszerek fejlesztése"
                 },
                 {
-                    "óraadó": "Fazekas Levente",
                     "hely": "III. elöadó",
                     "idopont": "Csütörtök, 10-12",
+                    "óraadó": "Fazekas Levente",
                     "kredit": 5,
                     "kurzusnev": "Mesterséges intelligencia"
                 },
                 {
+                    "hely": "Tréningstúdió",
+                    "idopont": "Csütörtök, 14-16",
                     "óraadó": [
                         "Lengyelné Szilágyi Szivia",
                         "Körei Attila"
                     ],
-                    "hely": "",
-                    "idopont": "Csütörtök, 14-16",
                     "kredit": 3,
                     "kurzusnev": "Versenyrobotok programozása"
                 },
                 {
-                    "óraadó": "Kis Áron",
                     "hely": "Inf/15",
                     "idopont": "Csütörtök, 16-20",
+                    "óraadó": "Kis Áron",
                     "kredit": 5,
                     "kurzusnev": "Játékprototípusok"
                 }
